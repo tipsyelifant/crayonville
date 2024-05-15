@@ -415,11 +415,15 @@ def run():
     st.write("# This is an example of a personality quiz")
     st.write("All credits belong to https://github.com/IseeJ/CosmosPersona/tree/main")
     if st.session_state.progress == 0:
-        show_gif("./image/main.gif")
-        # st.image("./image/main.gif")
+        # show_gif("./image/main.gif")
+        st.image("./image/qrcode.png")
+        password = st.text_input("Enter the code from your email!")
         if st.button("Start Personality Quiz"):
-            st.session_state.progress = 1
-            st.rerun()
+            if password == "whatismycolour":
+                st.session_state.progress = 1
+                st.rerun()
+            else:
+                st.write("The code is incorrect")
     
     elif st.session_state.progress > 12:
         st.write("Completed!")
