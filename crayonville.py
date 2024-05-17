@@ -413,7 +413,6 @@ def run():
         )
 
     st.write("# This is an example of a personality quiz")
-    st.write("All credits belong to https://github.com/IseeJ/CosmosPersona/tree/main")
     if st.session_state.progress == 0:
         # show_gif("./image/main.gif")
         st.image("./image/qrcode.png")
