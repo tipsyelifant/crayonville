@@ -36,13 +36,21 @@ def run():
     local_image_path = "./image/crayon_background.png" #make sure the image is in the same folder
     img = get_img(local_image_path)
 
+    button_background = "background-color: blue; width: 300px;"
+
     page_bg_img = f"""
     <style>
     [data-testid="stAppViewContainer"] {{ background-image: url("data:image/png;base64,{img}"); background-size: cover; }}
     </style>
     """
 
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    custom_css = """
+    <style>
+    div.stButton button {"background-color: blue; width: 300px;"}
+    </style>
+    """
+
+    st.markdown(custom_css, unsafe_allow_html=True)
 
     if "progress" not in st.session_state:
         st.session_state.progress = 0
@@ -62,7 +70,8 @@ def run():
                                     12:"",}
 
     questions = [
-        {"empty":"placeholder"},
+        {"landing":"placeholder"},
+        {"sign_in":"placeholder"},
         {
             "question": "Q1/12: You're taking the bus on your way back home. It's been a loooong day, what are you thinking about?",
             "image": "image/Q1.gif",
@@ -335,32 +344,46 @@ def run():
         file_.close()
 
         st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" width="720" height="720" alt="gif">',
+            f'<img src="data:image/gif;base64,{data_url}" width="400" height="400" alt="gif">',
             unsafe_allow_html=True,
         )
 
-    st.write("# This is an example of a personality quiz")
+    st.header(":grey-background[:blue[Welcome!]]")
     if st.session_state.progress == 0:
         # show_gif("./image/main.gif")
-        st.image("./image/qrcode.png")
-        password = st.text_input("Enter the code from your email!")
-        if st.button("Start Personality Quiz"):
-            if password == "whatismycolour":
+        st.image("./image/qrcode.png", width=400) #Change this line to show the logo
+        if st.button("Start!"):
                 st.session_state.progress = 1
+                st.rerun()
+            
+    elif st.session_state.progress == 1:
+        st.write("Step 1: Click on the link and fill up the form sg")
+        st.image("./image/qrcode.png", width=400) # Change here to show qrcode image
+        st.write("www.abcdef.com") # Change here to show your link
+        st.write("Step 2: You will receive an email with the code after you have completed the form sg")
+        password = st.text_input("Step 3: Enter the code from your email!")
+        if st.button("Start Personality Quiz"):
+            if password == "whatismycolour": # Change here to set the password
+                st.session_state.progress = 2
                 st.rerun()
             else:
                 st.write("The code is incorrect")
     
-    elif st.session_state.progress > 12:
+    elif st.session_state.progress > 13: # Change the number here based on the number of questions. Set as 13 for 12 questions
         st.write("Completed!")
         personality = calculate_results(st.session_state.answers)
         st.write(personality)
-        st.image("image/"+resultOptions[personality]['image'])
+        st.image("image/"+resultOptions[personality]['image'], width=400)
         # show_gif("image/"+resultOptions[personality]['image'])
         # st.write(resultOptions[personality]['image'])
         if st.button("Restart Personality Quiz"):
-            st.session_state.progress = 0
+            st.session_state.progress = 2
             st.rerun()
+        st.link_button("E-learning", "https://www.google.com") # Edit here for the e-learning website
+        st.link_button("Inno-portal", "https://www.google.com") # Edit here for the inno-portal website
+
+
+        
 
     else:
         st.write(questions[st.session_state.progress]['question'])
@@ -369,11 +392,11 @@ def run():
         # st.write(questions[st.session_state.progress]['image']) # Write image name for now instead of showing image
         time.sleep(0.5)
         if st.button(questions[st.session_state.progress]['answers']['option1']['text']):
-            st.session_state.answers[st.session_state.progress] = questions[st.session_state.progress]['answers']['option1']['scores']
+            st.session_state.answers[st.session_state.progress] = questions[st.session_state.progress-1]['answers']['option1']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
         if st.button(questions[st.session_state.progress]['answers']['option2']['text']):
-            st.session_state.answers[st.session_state.progress] = questions[st.session_state.progress]['answers']['option2']['scores']
+            st.session_state.answers[st.session_state.progress] = questions[st.session_state.progress-1]['answers']['option2']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
         if st.button("Previous Question"):
