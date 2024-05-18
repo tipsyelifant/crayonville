@@ -376,6 +376,7 @@ def run():
     elif st.session_state.progress > 13: # Change the number here based on the number of questions. Set as 13 for 12 questions
         left_co, cent_co,last_co = st.columns(3)
         with cent_co:
+            st.progress(100, "Completed")
             st.write("Completed!")
             personality = calculate_results(st.session_state.answers)
             st.write(personality)
@@ -398,18 +399,18 @@ def run():
     else:
         left_co, cent_co,last_co = st.columns(3)
         with cent_co:
-            st.progress((st.session_state.progress-1)*10, text="Progress")
+            st.progress((st.session_state.progress-1)*8, text="Progress")
             st.write(questions[st.session_state.progress]['question'])
             # st.image(questions[st.session_state.progress]['image'])
             show_gif(questions[st.session_state.progress]['image'])
             # st.write(questions[st.session_state.progress]['image']) # Write image name for now instead of showing image
             time.sleep(0.5)
             if st.button(questions[st.session_state.progress]['answers']['option1']['text']):
-                st.session_state.answers[st.session_state.progress] = questions[st.session_state.progress-1]['answers']['option1']['scores']
+                st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option1']['scores']
                 st.session_state.progress = st.session_state.progress + 1
                 st.rerun()
             if st.button(questions[st.session_state.progress]['answers']['option2']['text']):
-                st.session_state.answers[st.session_state.progress] = questions[st.session_state.progress-1]['answers']['option2']['scores']
+                st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option2']['scores']
                 st.session_state.progress = st.session_state.progress + 1
                 st.rerun()
             if st.button("Previous Question"):
