@@ -50,7 +50,7 @@ def run():
     </style>
     """
 
-    st.markdown(custom_css, unsafe_allow_html=True)
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
     if "progress" not in st.session_state:
         st.session_state.progress = 0
@@ -350,11 +350,14 @@ def run():
 
     st.header(":grey-background[:blue[Welcome!]]")
     if st.session_state.progress == 0:
-        # show_gif("./image/main.gif")
-        st.image("./image/qrcode.png", width=400) #Change this line to show the logo
-        if st.button("Start!"):
-                st.session_state.progress = 1
-                st.rerun()
+        left_co, cent_co,last_co = st.columns(3)
+        with cent_co:
+            # st.image("logo.png")
+            # show_gif("./image/main.gif")
+            st.image("./image/qrcode.png", width=400) #Change this line to show the logo
+            if st.button("Start!"):
+                    st.session_state.progress = 1
+                    st.rerun()
             
     elif st.session_state.progress == 1:
         st.write("Step 1: Click on the link and fill up the form sg")
