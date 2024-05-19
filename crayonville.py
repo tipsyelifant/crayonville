@@ -34,7 +34,7 @@ def run():
             data = f.read()
         return base64.b64encode(data).decode()
 
-    local_image_path = "./image/background.jpg" #make sure the image is in the same folder
+    local_image_path = "./image/paperbackground.jpg" #make sure the image is in the same folder
     img = get_img(local_image_path)
 
     page_bg_img = f"""
