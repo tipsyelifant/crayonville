@@ -371,12 +371,13 @@ def run():
     if st.session_state.progress == 0:
         left_co, cent_co,last_co = st.columns(3)
         with cent_co:
-            st.header(":grey-background[:blue[Welcome!]]")
+            st.header("Welcome to Crayonville!")
             # show_gif("./image/main.gif")
             st.image("./image/qrcode.png", width=400) #Change this line to show the logo
             if st.button("Start!", type="secondary"):
                     st.session_state.progress = 1
                     st.rerun()
+
             
     elif st.session_state.progress == 1:
         left_co, cent_co,last_co = st.columns(3)
