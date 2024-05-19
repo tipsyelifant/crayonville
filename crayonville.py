@@ -63,10 +63,10 @@ def run():
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 250px !important;
+    width: 270px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
-    margin-left: float;
+    margin-left: 4rem;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
@@ -78,9 +78,10 @@ def run():
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 250px !important;
+    width: 270px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
+    margin-left: 4rem;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
