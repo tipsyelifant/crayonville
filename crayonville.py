@@ -384,7 +384,7 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo.png", width=400) #Change this line to show the logo
+        st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
                 st.rerun()
