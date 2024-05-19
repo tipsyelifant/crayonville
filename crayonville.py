@@ -44,11 +44,31 @@ def run():
     </style>
     """
 
-    custom_css = """
+    st.markdown("""
     <style>
-    div.stButton button {"background-color: blue; width: 300px;"}
-    </style>
-    """
+    button[kind="primary"] {
+    background-color: rgb(240, 103, 137);
+    color: rgb(51, 51, 51);
+    border: 2px rgb(51, 51, 51);
+    height: auto;
+    width: 200px;
+    padding-top: 10px !important
+    padding-bottom: 10px !important;
+    }
+    </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
+
+    st.markdown("""
+    <style>
+    button[kind="secondary"] {
+    background-color: rgb(214, 211, 169);
+    color: rgb(51, 51, 51);
+    border: 2px rgb(51, 51, 51);
+    height: auto;
+    width: 200px;
+    padding-top: 10px !important
+    padding-bottom: 10px !important;
+    }
+    </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
@@ -354,7 +374,7 @@ def run():
             st.header(":grey-background[:blue[Welcome!]]")
             # show_gif("./image/main.gif")
             st.image("./image/qrcode.png", width=400) #Change this line to show the logo
-            if st.button("Start!"):
+            if st.button("Start!", type="secondary"):
                     st.session_state.progress = 1
                     st.rerun()
             
