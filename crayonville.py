@@ -374,9 +374,9 @@ def run():
     if st.session_state.progress == 0:
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
-        st.title("Welcome to Crayonville!")
+        # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/qrcode.png", width=400) #Change this line to show the logo
+        st.image("./image/hagridlogo.png", width=400) #Change this line to show the logo
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
                 st.rerun()
