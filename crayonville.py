@@ -59,7 +59,7 @@ def run():
     st.markdown("""
     <style>
     button[kind="primary"] {
-    background-color: rgb(240, 103, 137);
+    background-color: #EDBB09;
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
