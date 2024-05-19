@@ -32,7 +32,7 @@ def run():
     # Css Styling to set max page width instead of default 730px
     css='''
     <style>
-        section.main > div {max-width:480px}
+        section.main > div {max-width:600px}
     </style>
     '''
     st.markdown(css, unsafe_allow_html=True)
@@ -66,7 +66,7 @@ def run():
     width: 270px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
-    margin-left: 4rem;
+    margin-left: 10rem;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
@@ -81,7 +81,7 @@ def run():
     width: 270px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
-    margin-left: 4rem;
+    margin-left: 10rem;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
@@ -377,7 +377,7 @@ def run():
         file_.close()
 
         st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" width="400" height="400" alt="gif">',
+            f'<img src="data:image/gif;base64,{data_url}" width="600" height="600" alt="gif" style="display: block; margin: 0 auto;">',
             unsafe_allow_html=True,
         )
 
@@ -386,7 +386,7 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo.png", width=400) #Change this line to show the logo
+        st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
         # left_col, cent_col, right_col = st.columns([1,1,1])
         # with cent_col:
         if st.button("Start!", type="primary"):
