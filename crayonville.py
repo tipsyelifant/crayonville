@@ -50,7 +50,7 @@ def run():
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 600px;
+    width: 400px;
     padding-top: 10px !important
     padding-bottom: 10px !important;
     }
@@ -63,7 +63,7 @@ def run():
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 600px;
+    width: 400px;
     padding-top: 10px !important
     padding-bottom: 10px !important;
     }
