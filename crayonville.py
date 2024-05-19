@@ -32,7 +32,7 @@ def run():
     # Css Styling to set max page width instead of default 730px
     css='''
     <style>
-        section.main > div {max-width:680px}
+        section.main > div {max-width:480px}
     </style>
     '''
     st.markdown(css, unsafe_allow_html=True)
@@ -63,7 +63,7 @@ def run():
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 400px;
+    width: 250px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
     }
@@ -77,7 +77,7 @@ def run():
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 400px;
+    width: 250px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
     }
@@ -384,12 +384,12 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
-        left_col, cent_col, right_col = st.columns([1,2,1])
-        with cent_col:
-            if st.button("Start!", type="primary"):
-                    st.session_state.progress = 1
-                    st.rerun()
+        st.image("./image/hagridlogo.png", width=400) #Change this line to show the logo
+        # left_col, cent_col, right_col = st.columns([1,1,1])
+        # with cent_col:
+        if st.button("Start!", type="primary"):
+                st.session_state.progress = 1
+                st.rerun()
 
             
     elif st.session_state.progress == 1:
