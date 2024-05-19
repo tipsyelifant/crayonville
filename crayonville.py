@@ -29,6 +29,14 @@ def run():
         layout="centered"
     )
 
+    # Css Styling to set max page width instead of default 730px
+    css='''
+    <style>
+        section.main > div {max-width:75rem}
+    </style>
+    '''
+    st.markdown(css, unsafe_allow_html=True)
+    
     # Define function to load an image and set as background
     @st.cache_data
     def get_img(file):
