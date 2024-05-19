@@ -417,17 +417,14 @@ def run():
         st.image("image/"+resultOptions[personality]['image'], width=600)
         # show_gif("image/"+resultOptions[personality]['image'])
         # st.write(resultOptions[personality]['image'])
-        left_btn, center_btn, right_btn = st.columns(3)
-        with left_btn:
-            if st.button("Restart Personality Quiz", type="primary"):
+        left_btn, right_btn = st.columns(2)
+        if st.button("Restart Personality Quiz", type="primary"):
                 st.session_state.progress = 2
                 st.rerun()
-        with center_btn:
-            st.link_button("E-learning", "https://www.google.com") # Edit here for the e-learning website
+        with left_btn:
+            st.link_button("E-learning", "https://www.google.com") # Edit here for E-learning website
         with right_btn:
             st.link_button("Inno-portal", "https://www.google.com") # Edit here for the inno-portal website
-
-
         
 
     else:
