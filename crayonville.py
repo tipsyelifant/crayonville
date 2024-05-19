@@ -32,7 +32,7 @@ def run():
     # Css Styling to set max page width instead of default 730px
     css='''
     <style>
-        section.main > div {max-width:480px}
+        section.main > div {max-width:600px}
     </style>
     '''
     st.markdown(css, unsafe_allow_html=True)
