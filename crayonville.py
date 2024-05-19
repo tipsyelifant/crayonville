@@ -385,9 +385,11 @@ def run():
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
         st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
-        if st.button("Start!", type="primary"):
-                st.session_state.progress = 1
-                st.rerun()
+        left_col, cent_col, right_col = st.columns(3)
+        with cent_col:
+            if st.button("Start!", type="primary"):
+                    st.session_state.progress = 1
+                    st.rerun()
 
             
     elif st.session_state.progress == 1:
