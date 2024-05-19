@@ -19,8 +19,9 @@ import base64
 
 LOGGER = get_logger(__name__)
 
-
+# This is the main function that runs 
 def run():
+    # Set page config function to center layout
     st.set_page_config(
         page_title="Hello",
         page_icon="👋",
@@ -28,6 +29,7 @@ def run():
         layout="centered"
     )
 
+    # Define function to load an image and set as background
     @st.cache_data
     def get_img(file):
         with open(file, "rb") as f:
@@ -37,12 +39,15 @@ def run():
     local_image_path = "./image/paperbackground.jpg" #make sure the image is in the same folder
     img = get_img(local_image_path)
 
+    # Markdown portion to load the background
     page_bg_img = f"""
     <style>
     [data-testid="stAppViewContainer"] {{ background-image: url("data:image/png;base64,{img}"); background-size: cover; }}
     </style>
     """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
+    # Markdown to style primary buttons
     st.markdown("""
     <style>
     button[kind="primary"] {
@@ -56,6 +61,7 @@ def run():
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
+    # Markdown to style secondary buttons
     st.markdown("""
     <style>
     button[kind="secondary"] {
@@ -68,8 +74,6 @@ def run():
     padding-bottom: 10px !important;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
-
-    st.markdown(page_bg_img, unsafe_allow_html=True)
 
     if "progress" not in st.session_state:
         st.session_state.progress = 0
