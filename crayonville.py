@@ -416,7 +416,7 @@ def run():
         st.write("Completed!")
         personality = calculate_results(st.session_state.answers)
         st.write(personality)
-        st.image("image/"+resultOptions[personality]['image'], width=400)
+        st.image("image/"+resultOptions[personality]['image'], width=600)
         # show_gif("image/"+resultOptions[personality]['image'])
         # st.write(resultOptions[personality]['image'])
         left_btn, center_btn, right_btn = st.columns(3)
