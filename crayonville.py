@@ -405,7 +405,7 @@ def run():
         # st.write(resultOptions[personality]['image'])
         left_btn, center_btn, right_btn = st.columns(3)
         with left_btn:
-            if st.button("Restart Personality Quiz", type="previous"):
+            if st.button("Restart Personality Quiz", type="secondary"):
                 st.session_state.progress = 2
                 st.rerun()
         with center_btn:
@@ -429,11 +429,11 @@ def run():
             st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option1']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
-        if st.button(questions[st.session_state.progress]['answers']['option2']['text'], type="secondary"):
+        if st.button(questions[st.session_state.progress]['answers']['option2']['text'], type="primary"):
             st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option2']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
-        if st.button("Previous Question", type="previous"):
+        if st.button("Previous Question", type="secondary"):
             if st.session_state.progress > 1:
                 st.session_state.progress = st.session_state.progress - 1
                 st.rerun()
