@@ -74,14 +74,14 @@ def run():
     st.markdown("""
     <style>
     button[kind="secondary"] {
-    background-color: rgb(214, 211, 169);
+    background-color: #EDBB09;
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
     height: auto;
-    width: 270px !important;
+    width: 600px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
-    margin-left: 10rem;
+    margin: 0 auto;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
@@ -387,8 +387,6 @@ def run():
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
         st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
-        # left_col, cent_col, right_col = st.columns([1,1,1])
-        # with cent_col:
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
                 st.rerun()
@@ -421,13 +419,13 @@ def run():
         # st.write(resultOptions[personality]['image'])
         left_btn, center_btn, right_btn = st.columns(3)
         with left_btn:
-            if st.button("Restart Personality Quiz", type="secondary"):
+            if st.button("Restart Personality Quiz", type="primary"):
                 st.session_state.progress = 2
                 st.rerun()
         with center_btn:
-            st.link_button("E-learning", "https://www.google.com", type="links") # Edit here for the e-learning website
+            st.link_button("E-learning", "https://www.google.com") # Edit here for the e-learning website
         with right_btn:
-            st.link_button("Inno-portal", "https://www.google.com", type="links") # Edit here for the inno-portal website
+            st.link_button("Inno-portal", "https://www.google.com") # Edit here for the inno-portal website
 
 
         
@@ -441,15 +439,15 @@ def run():
         show_gif(questions[st.session_state.progress]['image'])
         # st.write(questions[st.session_state.progress]['image']) # Write image name for now instead of showing image
         time.sleep(0.5)
-        if st.button(questions[st.session_state.progress]['answers']['option1']['text'], type="primary"):
+        if st.button(questions[st.session_state.progress]['answers']['option1']['text'], type="secondary"):
             st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option1']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
-        if st.button(questions[st.session_state.progress]['answers']['option2']['text'], type="primary"):
+        if st.button(questions[st.session_state.progress]['answers']['option2']['text'], type="secondary"):
             st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option2']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
-        if st.button("Previous Question", type="secondary"):
+        if st.button("Previous Question", type="primary"):
             if st.session_state.progress > 1:
                 st.session_state.progress = st.session_state.progress - 1
                 st.rerun()
