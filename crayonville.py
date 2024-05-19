@@ -69,32 +69,6 @@ def run():
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
-    st.markdown("""
-    <style>
-    button[kind="previous"] {
-    background-color: rgb(199, 201, 240);
-    color: rgb(51, 51, 51);
-    border: 2px rgb(51, 51, 51);
-    height: auto;
-    width: 200px;
-    padding-top: 10px !important
-    padding-bottom: 10px !important;
-    }
-    </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
-
-    st.markdown("""
-    <style>
-    button[kind="links"] {
-    background-color: rgb(175, 199, 173);
-    color: rgb(51, 51, 51);
-    border: 2px rgb(51, 51, 51);
-    height: auto;
-    width: 600px;
-    padding-top: 10px !important
-    padding-bottom: 10px !important;
-    }
-    </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
-
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
     if "progress" not in st.session_state:
