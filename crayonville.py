@@ -21,11 +21,12 @@ LOGGER = get_logger(__name__)
 
 
 def run():
-    # st.set_page_config(
-    #     page_title="Hello",
-    #     page_icon="👋",
-    #     initial_sidebar_state="collapsed"
-    # )
+    st.set_page_config(
+        page_title="Hello",
+        page_icon="👋",
+        initial_sidebar_state="collapsed",
+        layout="centered"
+    )
 
     @st.cache_data
     def get_img(file):
@@ -35,8 +36,6 @@ def run():
 
     local_image_path = "./image/crayon_background.png" #make sure the image is in the same folder
     img = get_img(local_image_path)
-
-    button_background = "background-color: blue; width: 300px;"
 
     page_bg_img = f"""
     <style>
@@ -369,14 +368,14 @@ def run():
         )
 
     if st.session_state.progress == 0:
-        left_co, cent_co,last_co = st.columns(3)
-        with cent_co:
-            st.header("Welcome to Crayonville!")
-            # show_gif("./image/main.gif")
-            st.image("./image/qrcode.png", width=400) #Change this line to show the logo
-            if st.button("Start!", type="secondary"):
-                    st.session_state.progress = 1
-                    st.rerun()
+        # left_co, cent_co,last_co = st.columns(3)
+        # with cent_co:
+        st.title("Welcome to Crayonville!")
+        # show_gif("./image/main.gif")
+        st.image("./image/qrcode.png", width=400) #Change this line to show the logo
+        if st.button("Start!", type="secondary"):
+                st.session_state.progress = 1
+                st.rerun()
 
             
     elif st.session_state.progress == 1:
