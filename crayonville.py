@@ -121,7 +121,7 @@ def run():
         },
         {
             "question": "Q2/12: You look outside the windows, seems like it's going to rain soon. Suddenly everything turns into darkness!!",
-            "image": "image/Q2.gif",
+            "image": "image/Q2.png",
             "answers": {
                 "option1": {
                     "text": "I don't remember this tunnel. *Pull out your phone to look at the map*",
