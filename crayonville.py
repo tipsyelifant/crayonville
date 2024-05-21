@@ -23,8 +23,8 @@ LOGGER = get_logger(__name__)
 def run():
     # Set page config function to center layout
     st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
+        page_title="Hagrid and the Yellow Crayon",
+        page_icon="🖍️",
         initial_sidebar_state="collapsed",
         layout="centered"
     )
@@ -398,12 +398,12 @@ def run():
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.write("Step 1: Click on the link and fill up the form sg")
-        st.image("./image/qrcode.png", width=400) # Change here to show qrcode image
-        st.write("www.abcdef.com") # Change here to show your link
+        #st.image("./image/qrcode.png", width=400) # Change here to show qrcode image
+        st.write("https://go.gov.sg/crayonvilleregistration") # Change here to show your link
         st.write("Step 2: You will receive an email with the code after you have completed the form sg")
         password = st.text_input("Step 3: Enter the code from your email!")
         if st.button("Start Personality Quiz", type="primary"):
-            if password == "whatismycolour": # Change here to set the password
+            if password == "thedayiknowmycolour": # Change here to set the password
                 st.session_state.progress = 2
                 st.rerun()
             else:
