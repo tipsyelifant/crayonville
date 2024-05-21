@@ -106,15 +106,15 @@ def run():
         {"landing":"placeholder"},
         {"sign_in":"placeholder"},
         {
-            "question": "Q1/12: You're taking the bus on your way back home. It's been a loooong day, what are you thinking about?",
+            "question": "Q1/15: You stumbled upon a torn map leading to the legendary Wizard Hagrid. What's your move?",
             "image": "image/Q1.gif",
             "answers": {
                 "option1": {
-                    "text": "I'm just so tired and can't wait to go home. Why does everyday feel the same...",
+                    "text": "Search frantically for the missing piece.",
                     "scores": { "T": 0, "F": 1 },
                 },
                 "option2": {
-                    "text": "Should I rest or work first when I get home? Most importantly, what's for dinner?",
+                    "text": "Craft a clever plan without the missing piece.",
                     "scores": { "T": 1, "F": 0 },
                 },
             },
