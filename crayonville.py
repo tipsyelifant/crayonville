@@ -339,58 +339,55 @@ yellow,red
 green,blue
 green,red
 blue,red
-#N : 15
 
 
     resultOptions = {
-        frozenset(["white", "black"]): {
+        frozenset(["White", "Black"]): {
             "image": "1DE.png",
         },
-        "ISFJ": {
+        frozenset(["White", "Yellow"]): {
             "image": "2light.png"
         },
-        "INFJ": {
+        frozenset(["White", "Green"]): {
             "image": "3UFO.png"
         },
-        "INTJ": {
+        frozenset(["White", "Blue"]): {
             "image": "4nebula.png"
         },
-        "ISTP": {
+        frozenset(["White", "Red"]): {
             "image": "5comet.png"
         },
-        "ISFP": {
+        frozenset(["Black", "Yellow"]): {
             "image": "6ST.png"
         },
-        "INFP": {
+        frozenset(["Black", "Green"]): {
             "image": "7DM.png"
         },
-        "INTP": {
+        frozenset(["Black", "Blue"]): {
             "image": "8met.png"
         },
-        "ESTP": {
+        frozenset(["Black", "Red"]): {
             "image": "9BH.png"
         },
-        "ESFP": {
+        frozenset(["Yellow", "Green"]): {
             "image": "10Sn.png"
         },
-        "ENFP": {
+        frozenset(["Yellow", "Blue"]): {
             "image": "11Grav.png"
         },
-        "ENTP": {
+        frozenset(["Yellow", "Red"]): {
             "image": "12hand.png"
         },
-        "ESTJ": {
+        frozenset(["Green", "Blue"]):  {
             "image": "13sat.png"
         },
-        "ESFJ": {
+        frozenset(["Green", "Red"]): {
             "image": "14sun.png"
         },
-        "ENFJ": {
+        frozenset(["Blue", "Red"]): {
             "image": "15gal.png"
         },
-        "ENTJ": {
-            "image": "16rocket.png"
-        },
+        
     }
 
     # Go through all the scores and find the personality
