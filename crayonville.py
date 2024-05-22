@@ -323,7 +323,7 @@ def run():
             },
         },
     ]
-    
+
     resultOptions = {
         frozenset(["White", "Black"]): {
             "image": "1DE.png",
@@ -469,7 +469,7 @@ def run():
     else:
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
-        st.progress((st.session_state.progress-1)*8, text="Progress")
+        st.progress((st.session_state.progress-2)*6, text="Progress")
         st.write(questions[st.session_state.progress]['question'])
         # st.image(questions[st.session_state.progress]['image'])
         show_gif(questions[st.session_state.progress]['image'])
