@@ -450,6 +450,7 @@ def run():
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.progress(100, "Completed")
+        st.write(st.session_state.answers)
         st.write("Completed!")
         personality = calculate_results(st.session_state.answers)
         st.write(personality)
@@ -470,6 +471,7 @@ def run():
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.progress((st.session_state.progress-2)*6, text="Progress")
+        st.write(st.session_state.answers)
         st.write(questions[st.session_state.progress]['question'])
         # st.image(questions[st.session_state.progress]['image'])
         show_gif(questions[st.session_state.progress]['image'])
