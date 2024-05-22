@@ -308,10 +308,42 @@ def run():
                 },
             },
         },
+        {
+            "question": "Q15/15: ‘Now, pick the picture that resonates with you. It will reveal your destiny,’ said Wizard Hagrid. You: ",
+            "image": "image/Q12.gif",
+            "answers": {
+                "option1": {
+                    "text": "Cautiously examine each picture, pondering its impact...",
+                    "scores": { "Black": 1, "Green": 0 },
+                },
+                "option2": {
+                    "text": "Head straight to your desired picture, buzzing with excitement on the ideas that might happen. ",
+                    "scores": { "Black": 0, "Green": 1 },
+                },
+            },
+        },
     ]
+    ↑↓
+white,black
+white,yellow
+white,green
+white,blue
+white,red
+black,yellow
+black,green
+black,blue
+black,red
+yellow,green
+yellow,blue
+yellow,red
+green,blue
+green,red
+blue,red
+#N : 15
+
 
     resultOptions = {
-        "ISTJ": {
+        frozenset(["white", "black"]): {
             "image": "1DE.png",
         },
         "ISFJ": {
@@ -431,7 +463,7 @@ def run():
             else:
                 st.write("The code is incorrect")
     
-    elif st.session_state.progress > 13: # Change the number here based on the number of questions. Set as 13 for 12 questions
+    elif st.session_state.progress > 16: # Change the number here based on the number of questions. Set as 13 for 12 questions
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.progress(100, "Completed")
