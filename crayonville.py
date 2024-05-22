@@ -35,7 +35,7 @@ def run():
     # Css Styling to set max page width instead of default 730px
     css='''
     <style>
-        section.main > div {max-width:600px; max-height:400px}
+        section.main > div {max-width:600px}
     </style>
     '''
     st.markdown(css, unsafe_allow_html=True)
@@ -103,7 +103,10 @@ def run():
                                     9:"",
                                     10:"",
                                     11:"",
-                                    12:"",}
+                                    12:"",
+                                    13:"",
+                                    14:"",
+                                    15:"",}
 
     questions = [
         {"landing":"placeholder"},
@@ -114,178 +117,194 @@ def run():
             "answers": {
                 "option1": {
                     "text": "Search frantically for the missing piece.",
-                    "scores": { "T": 0, "F": 1 },
+                    "scores": { "Red": 1, "Blue": 0 },
                 },
                 "option2": {
                     "text": "Craft a clever plan without the missing piece.",
-                    "scores": { "T": 1, "F": 0 },
+                    "scores": { "Red": 0, "Blue": 1 },
                 },
             },
         },
         {
-            "question": "Q2/12: You look outside the windows, seems like it's going to rain soon. Suddenly everything turns into darkness!!",
+            "question": "Q2/15: Suddenly, you looked ahead and spotted a colourful boat along a rainbow river.",
             "image": "image/Q2.png",
             "answers": {
                 "option1": {
-                    "text": "I don't remember this tunnel. *Pull out your phone to look at the map*",
-                    "scores": { "P": 0, "J": 1 },
+                    "text": "Imagine an epic boat adventure and gather supplies.",
+                    "scores": { "Blue": 1, "White": 0 },
                 },
                 "option2": {
-                    "text": "*Turn around to see the other's reaction* Should I ask the driver what's going on?",
-                    "scores": { "P": 1, "J": 0 },
+                    "text": "Inspect the boat's construction and durability for the journey.",
+                    "scores": { "Blue": 0, "White": 1 },
                 },
             },
         },
         {
-            "question": "Q3/12: Before you can do anything, the bus stops and everything around you floats up!",
+            "question": "Q3/15: You decided to take the boat and it sailed into a mysterious cave. You thought to yourself:",
             "image": "image/Q3.gif",
             "answers": {
                 "option1": {
-                    "text": "Ok this is weird, am I dreaming? *pinch your arm*",
-                    "scores": { "S": 1, "N": 0 },
+                    "text": "Wow, what a majestic cave. I wonder what I can discover here.",
+                    "scores": { "Yellow": 1, "Green": 0 },
                 },
                 "option2": {
-                    "text": "Is this a prank? Am I getting kidnapped by aliens?!",
-                    "scores": { "S": 0, "N": 1 },
+                    "text": "This looks like a safe space for me to hide and take shelter.",
+                    "scores": { "Yellow": 0, "Green": 1 },
                 },
             },
         },
         {
-            "question": "Q4/12: Amidst the surprise, your eyes catch something drifting past the window.",
+            "question": "Q4/15: Amidst hunger, you discover a mushroom in the cave. You thought:",
             "image": "image/Q4.gif",
             "answers": {
                 "option1": {
-                    "text": "Woahhh...so many cats! How cute!! I wanna give them a hug!",
-                    "scores": { "T": 0, "F": 1 },
+                    "text": "I don’t feel too good about this mushroom. Will skip it.",
+                    "scores": { "Red": 1, "Black": 0 },
                 },
                 "option2": {
-                    "text": "Cats? In space? That's kinda odd... How do they survive out there?!",
-                    "scores": { "T": 1, "F": 0 },
+                    "text": "This mushroom will very likely kill me! ",
+                    "scores": { "Red": 0, "Black": 1 },
                 },
             },
         },
         {
-            "question": "Q5/12: 'Welcome Aboard!' a small robot appears and announces, 'We will reach our destination in 5 months 6 days and 2 hours!'",
+            "question": "Q5/15: You walked along the cave and spotted some graffiti on the walls. You wonder:",
             "image": "image/Q5.gif",
             "answers": {
                 "option1": {
-                    "text": "Cool! A space cruise?! Where are we going? Do I get a spacesuit? This is so exciting!",
-                    "scores": { "P": 1, "J": 0 },
+                    "text": "Graffiti, a mystery to solve. Let's crack this code.",
+                    "scores": { "Blue": 1, "Yellow": 0 },
                 },
                 "option2": {
-                    "text": "Hey uh...Am I in space? How did I get here? When can I go home?! Why..",
-                    "scores": { "P": 0, "J": 1 },
+                    "text": "A clue! Getting closer to the Wizard Hagrid.",
+                    "scores": { "Blue": 0, "Yellow": 1 },
                 },
             },
         },
         {
-            "question": "Q6/12: The robot just points to the back of the bus which now looks more like inside of a spaceship! What do you want to see first?",
+            "question": "Q6/15: Suddenly, you noticed a rabbit outside the cave waving at you. It gestured for you to follow it. Your immediate reaction:",
             "image": "image/Q6.gif",
             "answers": {
                 "option1": {
-                    "text": "Solar system themed fountain in the middle. I want to take pictures with it.",
-                    "scores": { "I": 0, "E": 1 },
+                    "text": "Look at rabbit sceptically and wonder if following it will be a huge risk.",
+                    "scores": { "Black": 1, "White": 0 },
                 },
                 "option2": {
-                    "text": "Cozy corner with a massaging chair. I need to sit down and process.",
-                    "scores": { "I": 1, "E": 0 },
+                    "text": "Examine the rabbit's behaviour and its surroundings before making a decision.",
+                    "scores": { "Black": 0, "White": 1 },
                 },
             },
         },
         {
-            "question": "Q7/12: On the way back to your seat, you are surrounded by cats! 'Unauthorized passenger detected, CAPTURE CAPTURE!'",
+            "question": "Q7/15: If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You thought:",
             "image": "image/Q7.gif",
             "answers": {
                 "option1": {
-                    "text": "Woah! What do you mean unauthorized? I'm the passenger of this cruise!",
-                    "scores": { "S": 1, "N": 0 }
+                    "text": "Just nice! I feel super hungry!",
+                    "scores": { "Red": 1, "White": 0 }
                 },
                 "option2": {
-                    "text": "Ok, I have no idea what's going on. How about we calm down and chat for a bit?",
-                    "scores": { "S": 0, "N": 1 },
+                    "text": "If the birds are enjoying them, it should be safe for me too.",
+                    "scores": { "Red": 0, "White": 1 },
                 },
             },
         },
         {
-            "question": "Q8/12: Suddenly, the robot glides in, it whispers something to the cats that makes them stop.",
+            "question": "Q8/15: After eating the fruits, you were transported instantly to Mount Chroma. You met a little paintbrush who said 'Are you looking for Wizard Hagrid? I can bring you there.' You:",
             "image": "image/Q8.gif",
             "answers": {
                 "option1": {
-                    "text": "Bob!! Thank you! You come to save me, right?",
-                    "scores": { "E": 1, "I": 0 },
+                    "text": "I'm incredibly lucky to have a guide like you!",
+                    "scores": { "Yellow": 1, "Black": 0 },
                 },
                 "option2": {
-                    "text": "HA! That's right! Back off, cats! Am I safe to go now?!",
-                    "scores": { "E": 0, "I": 1 },
+                    "text": "Can I trust him? What if this is a trap?",
+                    "scores": { "Yellow": 0, "Black": 1 },
                 },
             },
         },
         {
-            "question": "Q9/12: The robot transforms into a giant vacuum cleaner, the cats use it to point at you!",
+            "question": "Q9/15: You followed the little paintbrush to a cylindrical house. When the door opens, you were greeted by a group of colourful little paintbrushes. You thought:",
             "image": "image/Q9.gif",
             "answers": {
                 "option1": {
-                    "text": "Throw your coat at them as distraction, run towards the big green 'EXIT' sign!",
-                    "scores": { "J": 1, "P": 0 },
+                    "text": "I should first ask them who they are before I share about my plans.",
+                    "scores": { "Blue": 1, "Green": 0 },
                 },
                 "option2": {
-                    "text": "Run in random direction, confuse them, blend in with the crowd!",
-                    "scores": { "J": 0, "P": 1 },
+                    "text": "Maybe they will bring me to Wizard Hagrid through a secret route!",
+                    "scores": { "Blue": 0, "Green": 1 },
                 },
             },
         },
         {
-            "question": "Q10/12: You run past the gift shop. Looks like you got rid of them. It wouldn't hurt to get some souvenirs, right?",
+            "question": "Q10/15: ‘I challenge you to a game of ‘Drawasaurus’. If you can draw faster than us, we’ll show you the way to Wizard Hagrid. If you are slower, you’ll give up your colour to us,’ said the paintbrushes.",
             "image": "image/Q10.gif",
             "answers": {
                 "option1": {
-                    "text": "Get the Jupiter headphone, wear it to hear people's thoughts!",
-                    "scores": { "F": 1, "T": 0 },
+                    "text": "I sense that I might be able to draw faster than these little paintbrushes.",
+                    "scores": { "Red": 1, "Yellow": 0 },
                 },
                 "option2": {
-                    "text": "Get the Mars watch, turn it and you can time travel!",
-                    "scores": { "F": 0, "T": +1 },
+                    "text": "Game on! One crayon offers better control and precision than a group of paintbrushes anyway.",
+                    "scores": { "Red": 0, "Yellow": 1 },
                 },
             },
 
         },
         {
-            "question": "Q11/12: The giant vacuum cleaner suddenly emerges in front of you! You're sucked into its vortex!!!",
+            "question": "Q11/15: You drew as frantically as you could, determined to win. You notice that the paintbrushes couldn’t keep up with you.",
             "image": "image/Q11.gif",
             "answers": {
                 "option1": {
-                    "text": "It's ok, this is just a dream! I'll wake up soon! *close your eyes and give up*",
-                    "scores": { "S": 1, "N": 0 },
+                    "text": "Looks like they’re making a mess painting together. I’m definitely going to win.",
+                    "scores": { "White": 1, "Yellow": 0 },
                 },
                 "option2": {
-                    "text": "I'll find the way out! Maybe there are some secret doors! *look around for the way out*",
-                    "scores": { "S": 0, "N": 1 },
+                    "text": "Woohoo! I knew it! Too many paintbrushes spoil the drawing. It’s good to operate alone!",
+                    "scores": { "White": 0, "Yellow": 1 },
                 },
             },
         },
         {
-            "question": "Q12/12: After a moment of darkness, you find yourself back in the bus. 'Are you alright?' the ticket inspector asks",
+            "question": "Q12/15: Defeated that they had lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They said that Wizard Hagrid lives there. You:",
             "image": "image/Q12.gif",
             "answers": {
                 "option1": {
-                    "text": "Woah! I thought I was captured... Nevermind! I'm alright now, I guess? *panic in silence*",
-                    "scores": { "E": 0, "I": 1 },
+                    "text": "Sense that I am getting closer to my destination this time. ",
+                    "scores": { "Red": 1, "Green": 0 },
                 },
                 "option2": {
-                    "text": "You won't believe it...I think I just had the wildest dream ever! *tell him about your space adventure*",
-                    "scores": { "E": 1, "I": 0 },
+                    "text": "Wonder if there are shorter paths to get to Wizard Hagrid. ",
+                    "scores": { "Red": 0, "Green": 1 },
                 },
             },
         },
         {
-            "question": "When you look up again, the inspector's already gone. You glance outside the window, darkness creeps in as the bus enters another tunnel...",
+            "question": "Q13/15: You decided to follow the road towards the art gallery. Entering the art gallery, you saw a wise old man, who turns out to be Wizard Hagrid that you’ve been looking for. You:",
             "image": "image/Q13.gif",
             "answers": {
                 "option1": {
-                    "text": "Wait...was that Bob?",
+                    "text": "Eagerly prepare the things you intend to say to Wizard Hagrid. ",
+                    "scores": { "Blue": 1, "Black": 0 },
                 },
                 "option2": {
-                    "text": "Oh no...Do I have to go through this again?",
+                    "text": "Scrutinize Wizard Hagrid, wondering if he is truly powerful.",
+                    "scores": { "Blue": 0, "Black": 1 },
+                },
+            },
+        },
+        {
+            "question": "Q14/15: You say, ‘I want to be a super crayon as I wish to create beautiful art’. \n ‘And I see you’ve come a long way to meet me. I shall grant you your wishes, but you need to give up who you are to be a new crayon.’ Said Wizard Hagrid. ",
+            "image": "image/Q12.gif",
+            "answers": {
+                "option1": {
+                    "text": "Given the time, effort and sacrifices I have made, and the reputation of this Wizard, it makes sense for me to listen to him.",
+                    "scores": { "White": 1, "Green": 0 },
+                },
+                "option2": {
+                    "text": "Can’t wait to see the new me!",
+                    "scores": { "White": 0, "Green": 1 },
                 },
             },
         },
