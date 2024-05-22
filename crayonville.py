@@ -12,11 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#import streamlit as library
+#then you can import all the functions
 import streamlit as st
 from streamlit.logger import get_logger
 import time
 import base64
 
+#dont know what this do it is auto generated when you create the streamlit app
 LOGGER = get_logger(__name__)
 
 # This is the main function that runs 
@@ -32,7 +35,7 @@ def run():
     # Css Styling to set max page width instead of default 730px
     css='''
     <style>
-        section.main > div {max-width:600px}
+        section.main > div {max-width:600px; max-height:400px}
     </style>
     '''
     st.markdown(css, unsafe_allow_html=True)
