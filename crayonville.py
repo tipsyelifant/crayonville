@@ -196,7 +196,7 @@ def run():
             },
         },
         {
-            "question": "Q7/15: If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You thought:",
+            "question": 'Q7/15: "If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You thought:',
             "image": "image/Q7.gif",
             "answers": {
                 "option1": {
@@ -323,24 +323,7 @@ def run():
             },
         },
     ]
-    ↑↓
-white,black
-white,yellow
-white,green
-white,blue
-white,red
-black,yellow
-black,green
-black,blue
-black,red
-yellow,green
-yellow,blue
-yellow,red
-green,blue
-green,red
-blue,red
-
-
+    
     resultOptions = {
         frozenset(["White", "Black"]): {
             "image": "1DE.png",
@@ -393,30 +376,33 @@ blue,red
     # Go through all the scores and find the personality
     def calculate_results(answers):
         result = {}
-        personality = ""
-        for answer in answers.keys():
-            for attribute in answers[answer].keys():
-                if attribute not in result.keys():
-                    result.update({attribute:answers[answer][attribute]})
+        # personality = ""
+        for question_number in answers.keys():
+            for colour in answers[question_number].keys():
+                if colour not in result.keys():
+                    result.update({colour:answers[question_number][colour]})
                 else:
-                    result[attribute] = result[attribute] + answers[answer][attribute]
+                    result[colour] = result[colour] + answers[question_number][colour]
 
-        if result["I"] > result["E"]:
-            personality += "I"
-        else:
-            personality += "E"
-        if result["N"] > result["S"]:
-            personality += "N"
-        else:
-            personality += "S"
-        if result["T"] > result["F"]:
-            personality += "T"
-        else:
-            personality += "F"
-        if result["P"] > result["J"]:
-            personality += "P"
-        else:
-            personality += "J"
+        result = sorted(result.items(), key=lambda item: item[1], reverse=True)
+        result = [k for k,v in result]
+        personality = frozenset(result[:2])
+        # if result["I"] > result["E"]:
+        #     personality += "I"
+        # else:
+        #     personality += "E"
+        # if result["N"] > result["S"]:
+        #     personality += "N"
+        # else:
+        #     personality += "S"
+        # if result["T"] > result["F"]:
+        #     personality += "T"
+        # else:
+        #     personality += "F"
+        # if result["P"] > result["J"]:
+        #     personality += "P"
+        # else:
+        #     personality += "J"
 
         return personality
 
