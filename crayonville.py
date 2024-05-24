@@ -443,13 +443,13 @@ def run():
 
             
     elif st.session_state.progress == 1:
-        # left_co, cent_co,last_co = st.columns(3)
-        # with cent_co:
-        st.write("Step 1: Click on the link and fill up the form sg")
+        st.markdown('<div style="font-size:20px;"><b>Step 1:</b> Click on the link and fill up the form sg</div>', unsafe_allow_html=True)
         #st.image("./image/qrcode.png", width=400) # Change here to show qrcode image
         st.write("https://go.gov.sg/crayonvilleregistration") # Change here to show your link
-        st.write("Step 2: You will receive an email with the code after you have completed the form sg")
-        password = st.text_input("Step 3: Enter the code from your email!")
+        st.markdown('<div style="font-size:20px;"><b>Step 2:</b> You will receive an email with the code after you have completed the form sg</div>', unsafe_allow_html=True)
+        st.markdown('') # Empty string for spacing
+        st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email!</div>', unsafe_allow_html=True)
+        password = st.text_input('', label_visibility='collapsed')
         if st.button("Start Personality Quiz", type="primary"):
             if password == "thedayiknowmycolour": # Change here to set the password
                 st.session_state.progress = 2
