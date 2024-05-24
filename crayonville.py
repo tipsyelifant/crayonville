@@ -42,13 +42,13 @@ def run():
     st.markdown("""
         <style>
                .block-container {
-                    padding-top: 3rem;
+                    padding-top: 2rem;
                     padding-bottom: 0rem;
                     padding-left: 1rem;
                     padding-right: 1rem;
                 }
         </style>
-        """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True) # Set this to edit the top padding
     
     # Define function to load an image and set as background
     @st.cache_data
