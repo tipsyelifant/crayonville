@@ -462,7 +462,7 @@ def run():
                 st.session_state.progress = 2
                 st.rerun()
         with left_btn:
-            st.link_button("Find out more about DT Tools here", "https://www.google.com") # Edit here for E-learning website
+            st.link_button("Find out more about Design Thinking Tools here", "https://www.google.com") # Edit here for E-learning website
         with right_btn:
             st.link_button("Check out the other profiles here", "https://www.google.com") # Edit here for the inno-portal website
         
