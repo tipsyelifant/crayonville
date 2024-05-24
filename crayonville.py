@@ -44,8 +44,8 @@ def run():
                .block-container {
                     padding-top: 3rem;
                     padding-bottom: 0rem;
-                    padding-left: 5rem;
-                    padding-right: 5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                 }
         </style>
         """, unsafe_allow_html=True)
@@ -72,7 +72,6 @@ def run():
     st.markdown("""
     <style>
     button[kind="primary"] {
-    font-size: 60px;
     background-color: #EDBB09;
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
@@ -88,7 +87,6 @@ def run():
     st.markdown("""
     <style>
     button[kind="secondary"] {
-    font-size: 60px;
     background-color: #EDBB09;
     color: rgb(51, 51, 51);
     border: 2px rgb(51, 51, 51);
