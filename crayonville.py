@@ -477,10 +477,22 @@ def run():
 
         with left_btn:
             st.link_button("Find out more about Design Thinking Tools here", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
-            st.link_button("Find out more about Design Thinking Tools here", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
+            st.markdown("") # Empty string for spacing
+            st.link_button("Check out the other profiles here", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
         with right_btn:
-            st.link_button("Check out the other profiles here", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
-            if st.button("Restart Personality Quiz", type='primary', use_container_width=True):
+            st.link_button("Find out more about Design Thinking Tools here", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
+            st.markdown("""<style>
+            div.stButton > button:first-child {
+            background-color: #EDBB09;
+            color: rgb(51, 51, 51);
+            border: 2px rgb(51, 51, 51);
+            height: auto;
+            width: 270px !important;
+            padding-top: 10px !important
+            padding-bottom: 10px !important;
+            margin-left: 0%;
+            } </style>""", unsafe_allow_html=True)
+            if st.button("Restart Personality Quiz", type='primary'):
                 st.session_state.progress = 2
                 st.rerun()
 
