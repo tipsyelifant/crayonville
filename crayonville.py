@@ -450,7 +450,7 @@ def run():
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.progress(100, "Completed")
-        st.write(st.session_state.answers)
+        #st.write(st.session_state.answers)
         st.write("Completed!")
         personality = calculate_results(st.session_state.answers)
         st.write(personality)
@@ -462,9 +462,9 @@ def run():
                 st.session_state.progress = 2
                 st.rerun()
         with left_btn:
-            st.link_button("E-learning", "https://www.google.com") # Edit here for E-learning website
+            st.link_button("Find out more about DT Tools here", "https://www.google.com") # Edit here for E-learning website
         with right_btn:
-            st.link_button("Inno-portal", "https://www.google.com") # Edit here for the inno-portal website
+            st.link_button("Check out the other profiles here", "https://www.google.com") # Edit here for the inno-portal website
         
 
     else:
