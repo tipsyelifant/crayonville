@@ -79,7 +79,7 @@ def run():
     width: 270px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
-    margin-left: 10rem;
+    margin-left: 8rem; 
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
@@ -433,7 +433,7 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
+        st.image("./image/hagridlogo.png", use_column_width=True) #Change this line to show the logo
         st.markdown('<div style="text-align:center; font-size:20px;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:20px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
         st.markdown("") # Empty text to act as spacing
