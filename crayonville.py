@@ -424,8 +424,8 @@ def run():
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
         st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
-        st.write("Embark on an exciting adventure as a crayon with big dreams!")
-        st.write("Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.")
+        st.write(r"$\textsf{\LARGE Embark on an exciting adventure as a crayon with big dreams!}$")
+        st.write(r"$\textsf{\Large Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.}$")
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
                 st.rerun()
