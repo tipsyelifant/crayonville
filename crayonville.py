@@ -426,8 +426,8 @@ def run():
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
         st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
-        st.markdown('<div style="text-align:center; font-size:30px; font-weight:bold;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
-        st.markdown('<div style="text-align:center; font-size:24px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
                 st.rerun()
