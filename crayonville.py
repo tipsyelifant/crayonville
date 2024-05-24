@@ -39,6 +39,16 @@ def run():
     </style>
     '''
     st.markdown(css, unsafe_allow_html=True)
+    st.markdown("""
+        <style>
+               .block-container {
+                    padding-top: 3rem;
+                    padding-bottom: 0rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
     
     # Define function to load an image and set as background
     @st.cache_data
@@ -428,6 +438,7 @@ def run():
         st.image("./image/hagridlogo.png", width=600) #Change this line to show the logo
         st.markdown('<div style="text-align:center; font-size:20px;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:20px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
+        st.markdown("") # Empty text to act as spacing
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
                 st.rerun()
