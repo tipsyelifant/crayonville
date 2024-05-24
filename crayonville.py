@@ -79,7 +79,7 @@ def run():
     width: 270px !important;
     padding-top: 10px !important
     padding-bottom: 10px !important;
-    margin-left: 8rem; 
+    margin-left: 25%;
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
