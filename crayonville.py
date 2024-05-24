@@ -424,7 +424,7 @@ def run():
         file_.close()
 
         st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" width="600" height="600" alt="gif" style="display: block; margin: 0 auto;">',
+            f'<img src="data:image/gif;base64,{data_url}" width="400" alt="gif" style="display: block; margin: 0 auto;">',
             unsafe_allow_html=True,
         )
 
