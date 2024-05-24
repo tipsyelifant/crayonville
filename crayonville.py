@@ -43,7 +43,7 @@ def run():
         <style>
                .block-container {
                     padding-top: 1rem;
-                    padding-bottom: 1rem;
+                    padding-bottom: 2rem;
                     padding-left: 1rem;
                     padding-right: 1rem;
                 }
