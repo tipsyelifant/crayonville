@@ -468,18 +468,22 @@ def run():
         personality = calculate_results(st.session_state.answers)
         # st.markdown(f'<div style="font-size:20px;"><b>{personality}</b></div>', unsafe_allow_html=True)
         # st.write(personality)
-        st.image("image/"+resultOptions[personality]['image'], width=400)
+        left_img, cent_img, right_img = st.columns([1,4,3])
+        with cent_img:
+            st.image("image/"+resultOptions[personality]['image'], width=400)
         # show_gif("image/"+resultOptions[personality]['image'])
         # st.write(resultOptions[personality]['image'])
         left_btn, right_btn = st.columns(2)
-        if st.button("Restart Personality Quiz", type="primary"):
-                st.session_state.progress = 2
-                st.rerun()
+
         with left_btn:
+            st.link_button("Find out more about Design Thinking Tools here", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
             st.link_button("Find out more about Design Thinking Tools here", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
         with right_btn:
             st.link_button("Check out the other profiles here", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
-        
+            if st.button("Restart Personality Quiz", type='primary', use_container_width=True):
+                st.session_state.progress = 2
+                st.rerun()
+
 
     else:
         # left_co, cent_co,last_co = st.columns(3)
