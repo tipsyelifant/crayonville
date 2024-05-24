@@ -462,9 +462,11 @@ def run():
         # with cent_co:
         st.progress(100, "Completed")
         #st.write(st.session_state.answers)
-        st.write("Completed!")
+        st.markdown('<div style="font-size:20px;"><b>Completed!</b></div>', unsafe_allow_html=True)
+        # st.write("Completed!")
         personality = calculate_results(st.session_state.answers)
-        st.write(personality)
+        st.markdown(f'<div style="font-size:20px;"><b>{personality}</b></div>', unsafe_allow_html=True)
+        # st.write(personality)
         st.image("image/"+resultOptions[personality]['image'], width=600)
         # show_gif("image/"+resultOptions[personality]['image'])
         # st.write(resultOptions[personality]['image'])
@@ -483,7 +485,8 @@ def run():
         # with cent_co:
         st.progress((st.session_state.progress-2)*6, text="Progress")
         st.write(st.session_state.answers)
-        st.write(questions[st.session_state.progress]['question'])
+        st.markdown(f'''<div style="font-size:20px;"><b>{questions[st.session_state.progress]['question']}</b></div>''', unsafe_allow_html=True)
+        # st.write(questions[st.session_state.progress]['question'])
         # st.image(questions[st.session_state.progress]['image'])
         show_gif(questions[st.session_state.progress]['image'])
         # st.write(questions[st.session_state.progress]['image']) # Write image name for now instead of showing image
