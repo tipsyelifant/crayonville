@@ -351,7 +351,7 @@ def run():
             "image": "5comet.png"
         },
         frozenset(["Black", "Yellow"]): {
-            "image": "6ST.png"
+            "image": "mindfulmustard.png"
         },
         frozenset(["Black", "Green"]): {
             "image": "7DM.png"
