@@ -123,7 +123,7 @@ def run():
         {"sign_in":"placeholder"},
         {
             "question": "Q1/15: You stumbled upon a torn map leading to the legendary Wizard Hagrid. What's your move?",
-            "image": "image/Q1.gif",
+            "image": "image/Q1.png",
             "answers": {
                 "option1": {
                     "text": "Search frantically for the missing piece.",
@@ -151,7 +151,7 @@ def run():
         },
         {
             "question": "Q3/15: You decided to take the boat and it sailed into a mysterious cave. You thought to yourself:",
-            "image": "image/Q3.gif",
+            "image": "image/Q3.png",
             "answers": {
                 "option1": {
                     "text": "Wow, what a majestic cave. I wonder what I can discover here.",
@@ -165,7 +165,7 @@ def run():
         },
         {
             "question": "Q4/15: Amidst hunger, you discover a mushroom in the cave. You thought:",
-            "image": "image/Q4.gif",
+            "image": "image/Q4.png",
             "answers": {
                 "option1": {
                     "text": "I don’t feel too good about this mushroom. Will skip it.",
@@ -179,7 +179,7 @@ def run():
         },
         {
             "question": "Q5/15: You walked along the cave and spotted some graffiti on the walls. You wonder:",
-            "image": "image/Q5.gif",
+            "image": "image/Q5.png",
             "answers": {
                 "option1": {
                     "text": "Graffiti, a mystery to solve. Let's crack this code.",
@@ -193,7 +193,7 @@ def run():
         },
         {
             "question": "Q6/15: Suddenly, you noticed a rabbit outside the cave waving at you. It gestured for you to follow it. Your immediate reaction:",
-            "image": "image/Q6.gif",
+            "image": "image/Q6.png",
             "answers": {
                 "option1": {
                     "text": "Look at rabbit sceptically and wonder if following it will be a huge risk.",
@@ -207,7 +207,7 @@ def run():
         },
         {
             "question": 'Q7/15: "If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You thought:',
-            "image": "image/Q7.gif",
+            "image": "image/Q7.png",
             "answers": {
                 "option1": {
                     "text": "Just nice! I feel super hungry!",
@@ -221,7 +221,7 @@ def run():
         },
         {
             "question": "Q8/15: After eating the fruits, you were transported instantly to Mount Chroma. You met a little paintbrush who said 'Are you looking for Wizard Hagrid? I can bring you there.' You:",
-            "image": "image/Q8.gif",
+            "image": "image/Q8.png",
             "answers": {
                 "option1": {
                     "text": "I'm incredibly lucky to have a guide like you!",
@@ -235,7 +235,7 @@ def run():
         },
         {
             "question": "Q9/15: You followed the little paintbrush to a cylindrical house. When the door opens, you were greeted by a group of colourful little paintbrushes. You thought:",
-            "image": "image/Q9.gif",
+            "image": "image/Q9.png",
             "answers": {
                 "option1": {
                     "text": "I should first ask them who they are before I share about my plans.",
@@ -249,7 +249,7 @@ def run():
         },
         {
             "question": "Q10/15: ‘I challenge you to a game of ‘Drawasaurus’. If you can draw faster than us, we’ll show you the way to Wizard Hagrid. If you are slower, you’ll give up your colour to us,’ said the paintbrushes.",
-            "image": "image/Q10.gif",
+            "image": "image/Q10.png",
             "answers": {
                 "option1": {
                     "text": "I sense that I might be able to draw faster than these little paintbrushes.",
@@ -264,7 +264,7 @@ def run():
         },
         {
             "question": "Q11/15: You drew as frantically as you could, determined to win. You notice that the paintbrushes couldn’t keep up with you.",
-            "image": "image/Q11.gif",
+            "image": "image/Q11.png",
             "answers": {
                 "option1": {
                     "text": "Looks like they’re making a mess painting together. I’m definitely going to win.",
@@ -278,7 +278,7 @@ def run():
         },
         {
             "question": "Q12/15: Defeated that they had lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They said that Wizard Hagrid lives there. You:",
-            "image": "image/Q12.gif",
+            "image": "image/Q12.png",
             "answers": {
                 "option1": {
                     "text": "Sense that I am getting closer to my destination this time. ",
@@ -292,7 +292,7 @@ def run():
         },
         {
             "question": "Q13/15: You decided to follow the road towards the art gallery. Entering the art gallery, you saw a wise old man, who turns out to be Wizard Hagrid that you’ve been looking for. You:",
-            "image": "image/Q13.gif",
+            "image": "image/Q13.png",
             "answers": {
                 "option1": {
                     "text": "Eagerly prepare the things you intend to say to Wizard Hagrid. ",
@@ -306,7 +306,7 @@ def run():
         },
         {
             "question": "Q14/15: You say, ‘I want to be a super crayon as I wish to create beautiful art’. \n ‘And I see you’ve come a long way to meet me. I shall grant you your wishes, but you need to give up who you are to be a new crayon.’ Said Wizard Hagrid. ",
-            "image": "image/Q12.gif",
+            "image": "image/Q14.png",
             "answers": {
                 "option1": {
                     "text": "Given the time, effort and sacrifices I have made, and the reputation of this Wizard, it makes sense for me to listen to him.",
@@ -320,7 +320,7 @@ def run():
         },
         {
             "question": "Q15/15: ‘Now, pick the picture that resonates with you. It will reveal your destiny,’ said Wizard Hagrid. You: ",
-            "image": "image/Q12.gif",
+            "image": "image/Q15.png",
             "answers": {
                 "option1": {
                     "text": "Cautiously examine each picture, pondering its impact...",
