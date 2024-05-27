@@ -424,7 +424,7 @@ def run():
         file_.close()
 
         st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" width="400" alt="gif" style="display: block; margin: 0 auto;">',
+            f'<img src="data:image/gif;base64,{data_url}" width="300" alt="gif" style="display: block; margin: 0 auto;">',
             unsafe_allow_html=True,
         )
 
@@ -433,9 +433,9 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo.png", use_column_width=True) #Change this line to show the logo
-        st.markdown('<div style="text-align:center; font-size:20px;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
-        st.markdown('<div style="text-align:center; font-size:20px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
+        st.image("./image/hagridlogo.png", width=300) #Change this line to show the logo
+        st.markdown('<div style="text-align:center; font-size:18px;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:18px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
         st.markdown("") # Empty text to act as spacing
         if st.button("Start!", type="primary"):
                 st.session_state.progress = 1
