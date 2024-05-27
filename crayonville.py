@@ -69,7 +69,7 @@ def run():
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
     
-    st.markdown(""" 
+    st.markdown(""
     <style> 
     button[kind="primary"] { 
     background-color: rgb(240, 103, 137); 
@@ -146,7 +146,7 @@ def run():
     color: rgb(51, 51, 51) !important; 
     border: rgb(51, 51, 51); 
     } 
-    """, allow_unsafe_html=True)
+    "", allow_unsafe_html=True)
     
     # Markdown to style primary buttons
     # st.markdown("""
