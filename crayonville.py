@@ -443,10 +443,10 @@ def run():
 
             
     elif st.session_state.progress == 1:
-        st.markdown('<div style="font-size:20px;"><b>Step 1:</b> Click on the link and fill up the form sg</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:20px;"><b>Step 1:</b> Click on the link and fill up the FormSG</div>', unsafe_allow_html=True)
         #st.image("./image/qrcode.png", width=400) # Change here to show qrcode image
         st.write("https://go.gov.sg/crayonvilleregistration") # Change here to show your link
-        st.markdown('<div style="font-size:20px;"><b>Step 2:</b> You will receive an email with the code after you have completed the form sg</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:20px;"><b>Step 2:</b> You will receive an email with the code after you have completed the FormSG</div>', unsafe_allow_html=True)
         st.markdown('') # Empty string for spacing
         st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email!</div>', unsafe_allow_html=True)
         password = st.text_input('', label_visibility='collapsed')
