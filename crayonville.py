@@ -336,7 +336,7 @@ def run():
 
     resultOptions = {
         frozenset(["White", "Black"]): {
-            "image": "1DE.png",
+            "image": "groundedgrey.png",
         },
         frozenset(["White", "Yellow"]): {
             "image": "2light.png"
