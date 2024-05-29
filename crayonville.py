@@ -182,7 +182,7 @@ def run():
             "image": "image/Q5.png",
             "answers": {
                 "option1": {
-                    "text": "Graffiti, a mystery to solve. Let's crack this code.",
+                    "text": "I should decipher what the grafitti means before I decide if I should take it seriously.",
                     "scores": { "Blue": 1, "Yellow": 0 },
                 },
                 "option2": {
@@ -242,7 +242,7 @@ def run():
                     "scores": { "Blue": 1, "Green": 0 },
                 },
                 "option2": {
-                    "text": "Maybe they will bring me to Wizard Hagrid through a secret route!",
+                    "text": "Maybe they will bring me to Wizard Hagrid through a secret route in their house!",
                     "scores": { "Blue": 0, "Green": 1 },
                 },
             },
