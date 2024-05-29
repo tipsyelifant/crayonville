@@ -339,46 +339,46 @@ def run():
             "image": "groundedgrey.png",
         },
         frozenset(["White", "Yellow"]): {
-            "image": "2light.png"
+            "image": "curiouscream.png"
         },
         frozenset(["White", "Green"]): {
-            "image": "3UFO.png"
+            "image": "methodicalmint.png"
         },
         frozenset(["White", "Blue"]): {
-            "image": "4nebula.png"
+            "image": "adaptiveaqua.png"
         },
         frozenset(["White", "Red"]): {
-            "image": "5comet.png"
+            "image": "pragmaticpink.png"
         },
         frozenset(["Black", "Yellow"]): {
             "image": "mindfulmustard.png"
         },
         frozenset(["Black", "Green"]): {
-            "image": "7DM.png"
+            "image": "farsightedforest.png"
         },
         frozenset(["Black", "Blue"]): {
-            "image": "8met.png"
+            "image": "navigationalnavy.png"
         },
         frozenset(["Black", "Red"]): {
-            "image": "9BH.png"
+            "image": "meticulousmaroon.png"
         },
         frozenset(["Yellow", "Green"]): {
-            "image": "10Sn.png"
+            "image": "luminouslime.png"
         },
         frozenset(["Yellow", "Blue"]): {
-            "image": "11Grav.png"
+            "image": "tenaciousturquoise.png"
         },
         frozenset(["Yellow", "Red"]): {
-            "image": "12hand.png"
+            "image": "optimisticorange.png"
         },
         frozenset(["Green", "Blue"]):  {
-            "image": "13sat.png"
+            "image": "trailblazingteal.png"
         },
         frozenset(["Green", "Red"]): {
-            "image": "14sun.png"
+            "image": "boldbrown.png"
         },
         frozenset(["Blue", "Red"]): {
-            "image": "15gal.png"
+            "image": "perceptivepurple.png"
         },
         
     }
