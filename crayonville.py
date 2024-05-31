@@ -67,36 +67,115 @@ def run():
     </style>
     """
     st.markdown(page_bg_img, unsafe_allow_html=True)
-    
-    # Markdown to style primary buttons
-    st.markdown("""
-    <style>
-    button[kind="primary"] {
-    background-color: #EDBB09;
-    color: rgb(51, 51, 51);
-    border: 2px rgb(51, 51, 51);
-    height: auto;
-    width: 270px !important;
-    padding-top: 10px !important
-    padding-bottom: 10px !important;
-    margin-left: 25%;
-    }
-    </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
-    # Markdown to style secondary buttons
-    st.markdown("""
-    <style>
-    button[kind="secondary"] {
-    background-color: #EDBB09;
-    color: rgb(51, 51, 51);
-    border: 2px rgb(51, 51, 51);
-    height: auto;
-    width: 600px !important;
-    padding-top: 10px !important
-    padding-bottom: 10px !important;
-    margin: 0 auto;
-    }
-    </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
+    st.markdown(""" 
+    <style> 
+    button[kind="primary"] { 
+    background-color: rgb(240, 103, 137); 
+    color: rgb(51, 51, 51); 
+    border: 2px rgb(51, 51, 51); 
+    height: auto; 
+    width: 200px; 
+    } 
+    button[kind="primary"]:hover { 
+    background-color: rgb(250, 180, 197); 
+    color: rgb(51, 51, 51); 
+    border: rgb(51, 51, 51); 
+    } 
+    button[kind="primary"]:active { 
+    background-color: rgb(250, 180, 197); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+    button[kind="primary"]:focus { 
+    background-color: rgb(250, 180, 197); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+    button[kind="primary"]:visited { 
+    background-color: rgb(255, 217, 115); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+     
+    button[kind="secondary"] { 
+    background-color: rgb(255, 217, 115); 
+    color: rgb(51, 51, 51); 
+    border: 2px rgb(51, 51, 51); 
+    height: auto; 
+    width: 200px; 
+    } 
+    button[kind="secondary"]:hover { 
+    background-color: rgb(255, 233, 173); 
+    color: rgb(51, 51, 51); 
+    border: rgb(51, 51, 51); 
+    } 
+    button[kind="secondary"]:active { 
+    background-color: rgb(255, 233, 173); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+    button[kind="secondary"]:focus { 
+    background-color: rgb(255, 233, 173); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+     
+    a[kind="primary"] { 
+    background-color: rgb(255, 217, 115); 
+    color: rgb(51, 51, 51) !important; 
+    border: 2px rgb(51, 51, 51); 
+    height: auto; 
+    width: 200px; 
+    padding-top: 10px !important 
+    padding-bottom: 10px !important; 
+    } 
+    a[kind="primary"]:hover { 
+    background-color: rgb(255, 233, 173); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+    a[kind="primary"]:active { 
+    background-color: rgb(140, 139, 105); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+    a[kind="primary"]:focus { 
+    background-color: rgb(140, 139, 105); 
+    color: rgb(51, 51, 51) !important; 
+    border: rgb(51, 51, 51); 
+    } 
+    """, unsafe_allow_html=True)
+    
+    # # Markdown to style primary buttons
+    # st.markdown("""
+    # <style>
+    # button[kind="primary"] {
+    # background-color: #EDBB09;
+    # color: rgb(51, 51, 51);
+    # border: 2px rgb(51, 51, 51);
+    # height: auto;
+    # width: 270px !important;
+    # padding-top: 10px !important
+    # padding-bottom: 10px !important;
+    # margin-left: 25%;
+    # }
+    # </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
+
+    # # Markdown to style secondary buttons
+    # st.markdown("""
+    # <style>
+    # button[kind="secondary"] {
+    # background-color: #EDBB09;
+    # color: rgb(51, 51, 51);
+    # border: 2px rgb(51, 51, 51);
+    # height: auto;
+    # width: 600px !important;
+    # padding-top: 10px !important
+    # padding-bottom: 10px !important;
+    # margin: 0 auto;
+    # }
+    # </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
     if "progress" not in st.session_state:
         st.session_state.progress = 0
