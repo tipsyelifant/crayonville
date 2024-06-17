@@ -185,7 +185,14 @@ def run():
     }
     </style>
     """, unsafe_allow_html=True)
-    
+
+    st.markdown("""
+    <style>
+    div[data-testid="InputInstructions"] > span:nth-child(1) {
+    visibility: hidden;
+    }
+    </style>""", unsafe_allow_html=True)
+
     if "progress" not in st.session_state:
         st.session_state.progress = 0
 
