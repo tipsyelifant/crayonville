@@ -18,6 +18,7 @@ import streamlit as st
 from streamlit.logger import get_logger
 import time
 import base64
+import streamlit.components.v1 as components
 
 #dont know what this do it is auto generated when you create the streamlit app
 LOGGER = get_logger(__name__)
@@ -177,6 +178,14 @@ def run():
     }
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
+    st.markdown("""
+    <style>
+    div[data-baseweb="base-input"]{
+    background-color: rgb(240, 229, 191);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
     if "progress" not in st.session_state:
         st.session_state.progress = 0
 
@@ -529,6 +538,19 @@ def run():
         st.markdown('') # Empty string for spacing
         st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email!</div>', unsafe_allow_html=True)
         password = st.text_input('', label_visibility='collapsed')
+
+        components.html(
+            """
+        <script>
+        const elements = window.parent.document.querySelectorAll('div[data-baseweb="input"] > div')
+        console.log(elements)
+        elements[0].style.background-color = 'red'
+        </script>
+        """,
+            height=0,
+            width=0,
+        )
+
         if st.button("Start Personality Quiz", type="primary"):
             if password == "thedayiknowmycolour": # Change here to set the password
                 st.session_state.progress = 2
