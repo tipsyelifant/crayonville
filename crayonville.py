@@ -595,13 +595,13 @@ def run():
             st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option2']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
-        if st.button("Previous Question", type="primary"):
-            if st.session_state.progress > 1:
-                st.session_state.progress = st.session_state.progress - 1
-                st.rerun()
-            else:
-                st.session_state.progress = 0
-                st.rerun()
+        # if st.button("Previous Question", type="primary"):
+        #     if st.session_state.progress > 1:
+        #         st.session_state.progress = st.session_state.progress - 1
+        #         st.rerun()
+        #     else:
+        #         st.session_state.progress = 0
+        #         st.rerun()
 
 if __name__ == "__main__":
     run()
