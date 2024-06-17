@@ -161,6 +161,11 @@ def run():
     padding-bottom: 10px !important;
     margin-left: 25%;
     }
+    button[kind="primary"]:hover { 
+    background-color: #EDBB09; 
+    color: rgb(51, 51, 51); 
+    border: rgb(51, 51, 51); 
+    } 
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
     # Markdown to style secondary buttons
@@ -176,6 +181,16 @@ def run():
     padding-bottom: 10px !important;
     margin: 0 auto;
     }
+    button[kind="secondary"]:hover { 
+    background-color: #EDBB09; 
+    color: rgb(51, 51, 51); 
+    border: rgb(51, 51, 51); 
+    } 
+    button[kind="secondary"]:focus { 
+    background-color: #EDBB09; 
+    color: rgb(51, 51, 51); 
+    border: rgb(51, 51, 51); 
+    } 
     </style>""", unsafe_allow_html=True) # Edit this to change the background color and text color
 
     st.markdown("""
@@ -545,18 +560,6 @@ def run():
         st.markdown('') # Empty string for spacing
         st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email!</div>', unsafe_allow_html=True)
         password = st.text_input('', label_visibility='collapsed')
-
-        components.html(
-            """
-        <script>
-        const elements = window.parent.document.querySelectorAll('div[data-baseweb="input"] > div')
-        console.log(elements)
-        elements[0].style.background-color = 'red'
-        </script>
-        """,
-            height=0,
-            width=0,
-        )
 
         if st.button("Start Personality Quiz", type="primary"):
             if password == "thedayiknowmycolour": # Change here to set the password
