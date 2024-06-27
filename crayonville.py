@@ -594,6 +594,7 @@ def run():
         left_btn, right_btn = st.columns(2)
 
         with left_btn:
+            st.markdown("")
             st.link_button("Learn about Design Thinking Tools", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
             # st.markdown("") # Empty string for spacing
             # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
