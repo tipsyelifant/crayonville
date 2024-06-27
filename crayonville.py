@@ -543,7 +543,7 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo.png", use_column_width=True) #Change this line to show the logo
+        st.image("./image/hagridlogo.jpg", use_column_width=True) #Change this line to show the logo
         st.markdown('<div style="text-align:center; font-size:18px;">Embark on an exciting adventure as a crayon with big dreams!</div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:18px;">Join the quest to find the legendary Wizard Hagrid and unlock your super powers to create magnificent art.</div>', unsafe_allow_html=True)
         st.markdown("") # Empty text to act as spacing
