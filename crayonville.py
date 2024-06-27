@@ -568,7 +568,14 @@ def run():
             else:
                 st.write("The code is incorrect")
     
-    elif st.session_state.progress > 16: # Change the number here based on the number of questions. Set as 13 for 12 questions
+    elif st.session_state.progress == 17:
+        st.markdown('<div style="font-size:20px;"> Before you discover <b>your personalised crayon profiles...</b> </div>', unsafe_allow_html=True)
+        #st.image("./image/qrcode.png", width=400) # Change here to show qrcode image
+        if st.button("See my profile", type="primary"):
+                st.session_state.progress += 1
+                st.rerun()
+
+    elif st.session_state.progress > 18: # Change the number here based on the number of questions. Set as 13 for 12 questions
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         
