@@ -595,10 +595,10 @@ def run():
 
         with left_btn:
             st.link_button("Learn about Design Thinking Tools", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
-            st.markdown("") # Empty string for spacing
-            st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
+            # st.markdown("") # Empty string for spacing
+            # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
         with right_btn:
-            st.link_button("Design Thinking E-Learning", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
+            # st.link_button("Design Thinking E-Learning", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
             st.markdown("""<style>
             div.stButton > button:first-child {
             background-color: #EDBB09;
