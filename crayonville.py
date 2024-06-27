@@ -575,7 +575,7 @@ def run():
                 st.session_state.progress += 1
                 st.rerun()
 
-    elif st.session_state.progress > 18: # Change the number here based on the number of questions. Set as 13 for 12 questions
+    elif st.session_state.progress > 17: # Change the number here based on the number of questions. Set as 13 for 12 questions
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         
