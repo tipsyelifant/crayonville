@@ -278,11 +278,11 @@ def run():
             "image": "image/Q4.png",
             "answers": {
                 "option1": {
-                    "text": "I don’t feel too good about this mushroom. Will skip it.",
+                    "text": "My gut tells me that this mushroom should be safe to eat.",
                     "scores": { "Red": 1, "Black": 0 },
                 },
                 "option2": {
-                    "text": "This mushroom will very likely kill me! ",
+                    "text": "No way, this mushroom will likely kill me! ",
                     "scores": { "Red": 0, "Black": 1 },
                 },
             },
@@ -306,12 +306,12 @@ def run():
             "image": "image/Q6.png",
             "answers": {
                 "option1": {
-                    "text": "Look at rabbit sceptically and wonder if following it will be a huge risk.",
-                    "scores": { "Black": 1, "White": 0 },
+                    "text": "Aww, such a cute rabbit! *waves back*",
+                    "scores": { "Red": 1, "White": 0 },
                 },
                 "option2": {
-                    "text": "Examine the rabbit's behaviour and its surroundings before making a decision.",
-                    "scores": { "Black": 0, "White": 1 },
+                    "text": "It looks small and unarmed. I don't think it can do anything to me.",
+                    "scores": { "Red": 0, "White": 1 },
                 },
             },
         },
@@ -320,12 +320,12 @@ def run():
             "image": "image/Q7.png",
             "answers": {
                 "option1": {
-                    "text": "Just nice! I feel super hungry!",
-                    "scores": { "Red": 1, "White": 0 }
+                    "text": "Vibrant outside, poisonous inside. Beware!",
+                    "scores": { "Black": 1, "White": 0 }
                 },
                 "option2": {
-                    "text": "If the birds are enjoying them, it should be safe for me too.",
-                    "scores": { "Red": 0, "White": 1 },
+                    "text": "I see birds eating the fruits. Must be safe for me to eat too.",
+                    "scores": { "Black": 0, "White": 1 },
                 },
             },
         },
@@ -377,11 +377,11 @@ def run():
             "image": "image/Q11.png",
             "answers": {
                 "option1": {
-                    "text": "Looks like they’re making a mess painting together. I’m definitely going to win.",
+                    "text": "Looks like a messy situation when you have a couple of paintbrushes drawing together.",
                     "scores": { "White": 1, "Yellow": 0 },
                 },
                 "option2": {
-                    "text": "Woohoo! I knew it! Too many paintbrushes spoil the drawing. It’s good to operate alone!",
+                    "text": "Woohoo! I'm leading! SO FUN!",
                     "scores": { "White": 0, "Yellow": 1 },
                 },
             },
