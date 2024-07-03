@@ -429,7 +429,7 @@ def run():
             },
         },
         {
-            "question": "Q15/15: ‘Now, pick the picture that resonates with you. It will reveal your destiny,’ said Wizard Hagrid. You: ",
+            "question": "Q15/15: ‘Now, pick the picture that resonates with you. It will grant you your powers,’ said Wizard Hagrid. You: ",
             "image": "image/Q15.png",
             "answers": {
                 "option1": {
