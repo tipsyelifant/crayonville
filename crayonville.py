@@ -488,7 +488,7 @@ def run():
             "image": "boldbrown.png"
         },
         frozenset(["Blue", "Red"]): {
-            "image": "perceptivepurple-7.svg"
+            "image": "perceptivepurple-8.svg"
         },
         
     }
