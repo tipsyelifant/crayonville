@@ -608,7 +608,7 @@ def run():
             background-color: #EDBB09; /* Background color for the primary button */
             color: rgb(51, 51, 51) !important; /* Text color */
             border: 2px rgb(51, 51, 51); /* Border color and thickness */
-            border-radius: 25px;
+            border-radius: 10px;
             height: auto;
             width: 600px;
             padding-top: 10px !important;
