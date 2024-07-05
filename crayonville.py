@@ -601,7 +601,7 @@ def run():
         # st.write(resultOptions[personality]['image'])
         # left_btn, right_btn = st.columns(2)
         
-        
+        st.markdown('<div style="font-size:20px;">Curious to know more about your powers?</div>', unsafe_allow_html=True)
         st.markdown("""
         <style>
         a[kind="primary"] {
