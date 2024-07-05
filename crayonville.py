@@ -607,9 +607,9 @@ def run():
         a[kind="primary"] {
             background-color: #EDBB09; /* Background color for the primary button */
             color: rgb(51, 51, 51) !important; /* Text color */
-            border: 2px solid rgb(51, 51, 51); /* Border color and thickness */
+            border: 2px rgb(51, 51, 51); /* Border color and thickness */
             height: auto;
-            width: 200px;
+            width: 600px;
             padding-top: 10px !important;
             padding-bottom: 10px !important;
             text-align: center; /* Align text in the center */
