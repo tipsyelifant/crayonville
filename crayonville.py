@@ -614,7 +614,7 @@ def run():
         padding-bottom: 10px !important;
         margin-left: 0%;
         } </style>""", unsafe_allow_html=True)
-        if st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True): # Edit here for E-learning website
+        st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
             # st.markdown("") # Empty string for spacing
             # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
         # with right_btn:
