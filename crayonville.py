@@ -603,7 +603,7 @@ def run():
         
         # with left_btn:
         st.markdown("""
-        </style>
+        <style>
         a[kind="primary"] { 
             background-color: #EDBB09); 
             color: rgb(51, 51, 51) !important; 
@@ -628,7 +628,7 @@ def run():
             color: rgb(51, 51, 51) !important; 
             border: rgb(51, 51, 51); 
             } 
-            """, unsafe_allow_html=True)
+            </style>""", unsafe_allow_html=True)
         st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
             # st.markdown("") # Empty string for spacing
             # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
