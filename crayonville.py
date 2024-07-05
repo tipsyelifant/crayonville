@@ -601,35 +601,68 @@ def run():
         # st.write(resultOptions[personality]['image'])
         # left_btn, right_btn = st.columns(2)
         
-        # with left_btn:
+        
         st.markdown("""
         <style>
-        a[kind="primary"] { 
-            background-color: #EDBB09); 
-            color: rgb(51, 51, 51) !important; 
-            border: 2px rgb(51, 51, 51); 
-            height: auto; 
-            width: 200px; 
-            padding-top: 10px !important 
-            padding-bottom: 10px !important; 
-            } 
-            a[kind="primary"]:hover { 
-            # background-color: #EDBB09; 
-            color: rgb(51, 51, 51) !important; 
-            border: rgb(51, 51, 51); 
-            } 
-            a[kind="primary"]:active { 
-            # background-color: #EDBB09; 
-            color: rgb(51, 51, 51) !important; 
-            border: rgb(51, 51, 51); 
-            } 
-            a[kind="primary"]:focus { 
-            # background-color: #EDBB09; 
-            color: rgb(51, 51, 51) !important; 
-            border: rgb(51, 51, 51); 
-            } 
-            </style>""", unsafe_allow_html=True)
-        st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
+        a[kind="primary"] {
+            background-color: #EDBB09; /* Background color for the primary button */
+            color: rgb(51, 51, 51) !important; /* Text color */
+            border: 2px solid rgb(51, 51, 51); /* Border color and thickness */
+            height: auto;
+            width: 200px;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            text-align: center; /* Align text in the center */
+            display: inline-block; /* Display as inline block element */
+            text-decoration: none; /* Remove underline */
+        }
+    
+        a[kind="primary"]:hover {
+            background-color: #EDBB09; /* Hover background color */
+            color: rgb(51, 51, 51) !important; /* Text color on hover */
+            border-color: rgb(51, 51, 51); /* Border color on hover */
+        }
+    
+        a[kind="primary"]:active,
+        a[kind="primary"]:focus {
+            background-color: #EDBB09; /* Active/focus background color */
+            color: rgb(51, 51, 51) !important; /* Text color on active/focus */
+            border-color: rgb(51, 51, 51); /* Border color on active/focus */
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
+    st.markdown('<a href="https://www.google.com" kind="primary">Explore Design Thinking GenAI Tools & Profiles</a>', unsafe_allow_html=True)
+        
+        # # with left_btn:
+        # st.markdown("""
+        # <style>
+        # a[kind="primary"] { 
+        #     background-color: #EDBB09); 
+        #     color: rgb(51, 51, 51) !important; 
+        #     border: 2px rgb(51, 51, 51); 
+        #     height: auto; 
+        #     width: 200px; 
+        #     padding-top: 10px !important 
+        #     padding-bottom: 10px !important; 
+        #     } 
+        #     a[kind="primary"]:hover { 
+        #     # background-color: #EDBB09; 
+        #     color: rgb(51, 51, 51) !important; 
+        #     border: rgb(51, 51, 51); 
+        #     } 
+        #     a[kind="primary"]:active { 
+        #     # background-color: #EDBB09; 
+        #     color: rgb(51, 51, 51) !important; 
+        #     border: rgb(51, 51, 51); 
+        #     } 
+        #     a[kind="primary"]:focus { 
+        #     # background-color: #EDBB09; 
+        #     color: rgb(51, 51, 51) !important; 
+        #     border: rgb(51, 51, 51); 
+        #     } 
+        #     </style>""", unsafe_allow_html=True)
+        # st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
             # st.markdown("") # Empty string for spacing
             # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
         # with right_btn:
