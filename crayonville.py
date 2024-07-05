@@ -605,7 +605,7 @@ def run():
         st.markdown("""
         <style>
         a[kind="primary"] { 
-            background-color: #EDBB05); 
+            background-color: #EDBB09); 
             color: rgb(51, 51, 51) !important; 
             border: 2px rgb(51, 51, 51); 
             height: auto; 
@@ -614,17 +614,17 @@ def run():
             padding-bottom: 10px !important; 
             } 
             a[kind="primary"]:hover { 
-            # background-color: rgb(255, 233, 173); 
+            # background-color: #EDBB09; 
             color: rgb(51, 51, 51) !important; 
             border: rgb(51, 51, 51); 
             } 
             a[kind="primary"]:active { 
-            # background-color: rgb(140, 139, 105); 
+            # background-color: #EDBB09; 
             color: rgb(51, 51, 51) !important; 
             border: rgb(51, 51, 51); 
             } 
             a[kind="primary"]:focus { 
-            # background-color: rgb(140, 139, 105); 
+            # background-color: #EDBB09; 
             color: rgb(51, 51, 51) !important; 
             border: rgb(51, 51, 51); 
             } 
