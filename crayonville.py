@@ -632,7 +632,7 @@ def run():
         </style>
     """, unsafe_allow_html=True)
     
-    st.markdown('<a href="https://www.google.com" kind="primary">Explore Design Thinking GenAI Tools & Profiles</a>', unsafe_allow_html=True)
+        st.markdown('<a href="https://www.google.com" kind="primary">Explore Design Thinking GenAI Tools & Profiles</a>', unsafe_allow_html=True)
         
         # # with left_btn:
         # st.markdown("""
