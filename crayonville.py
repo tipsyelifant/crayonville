@@ -603,7 +603,7 @@ def run():
         
         # with left_btn:
         st.markdown("""
-        <style>
+        </style>
         a[kind="primary"] { 
             background-color: #EDBB09); 
             color: rgb(51, 51, 51) !important; 
