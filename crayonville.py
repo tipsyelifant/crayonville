@@ -570,10 +570,10 @@ def run():
                 st.write("The code is incorrect")
     
     elif st.session_state.progress == 17:
-        st.markdown('<div style="font-size:20px;"><b>You chose a picture and everything starts to spin.</b> </div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:20px;">You chose a picture and everything starts to <b>spin.</b> </div>', unsafe_allow_html=True)
         st.image("./image/spin.png", width=400) # Change here to show qrcode image
-        st.markdown('<div style="font-size:20px;"><b>Wizard Hagrid echoed, "I understand, little yellow crayon, that you would like to create magnificent art in the world!</b> </div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-size:20px;"><b>To create art that everyone desires, you need to master the design thinking spell and discover the power of empathy, envision and experiment."</b> </div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:20px;">Wizard Hagrid echoed, "I understand, little yellow crayon, that you would like to create <b>magnificent art</b> in the world! </div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:20px;">To create art that everyone desires, you need to master the <b>design thinking spell</b> and discover the <b>power of empathy, envision and experiment."</b> </div>', unsafe_allow_html=True)
         st.image("./image/spell.png", width=400) # Change here to show qrcode image
         if st.button("See my profile", type="primary"):
                 st.session_state.progress += 1
