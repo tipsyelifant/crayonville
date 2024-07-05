@@ -602,48 +602,35 @@ def run():
         # left_btn, right_btn = st.columns(2)
         
         
-    #     st.markdown("""
-    #     <style>
-    #     a[kind="primary"] {
-    #         background-color: #EDBB09; /* Background color for the primary button */
-    #         color: rgb(51, 51, 51) !important; /* Text color */
-    #         border: 2px rgb(51, 51, 51); /* Border color and thickness */
-    #         height: auto;
-    #         width: 600px;
-    #         padding-top: 10px !important;
-    #         padding-bottom: 10px !important;
-    #         text-align: center; /* Align text in the center */
-    #         display: inline-block; /* Display as inline block element */
-    #         text-decoration: none; /* Remove underline */
-    #     }
+        st.markdown("""
+        <style>
+        a[kind="primary"] {
+            background-color: #EDBB09; /* Background color for the primary button */
+            color: rgb(51, 51, 51) !important; /* Text color */
+            border: 2px rgb(51, 51, 51); /* Border color and thickness */
+            height: auto;
+            width: 600px;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            text-align: center; /* Align text in the center */
+            display: inline-block; /* Display as inline block element */
+            text-decoration: none; /* Remove underline */
+        }
     
-    #     a[kind="primary"]:hover {
-    #         background-color: #EDBB09; /* Hover background color */
-    #         color: rgb(51, 51, 51) !important; /* Text color on hover */
-    #         border-color: rgb(51, 51, 51); /* Border color on hover */
-    #     }
+        a[kind="primary"]:hover {
+            background-color: #EDBB09; /* Hover background color */
+            color: rgb(51, 51, 51) !important; /* Text color on hover */
+            border-color: rgb(51, 51, 51); /* Border color on hover */
+        }
     
-    #     a[kind="primary"]:active,
-    #     a[kind="primary"]:focus {
-    #         background-color: #EDBB09; /* Active/focus background color */
-    #         color: rgb(51, 51, 51) !important; /* Text color on active/focus */
-    #         border-color: rgb(51, 51, 51); /* Border color on active/focus */
-    #     }
-    #     </style>
-    # """, unsafe_allow_html=True)
-
-        st.markdown("""<style>
-        div.stButton > button:first-child {
-        background-color: #EDBB09;
-        color: rgb(51, 51, 51);
-        border: 2px rgb(51, 51, 51);
-        height: auto;
-        width: 600px !important;
-        padding-top: 10px !important
-        padding-bottom: 10px !important;
-        margin-left: 0%;
-        } </style>""", unsafe_allow_html=True)
-    
+        a[kind="primary"]:active,
+        a[kind="primary"]:focus {
+            background-color: #EDBB09; /* Active/focus background color */
+            color: rgb(51, 51, 51) !important; /* Text color on active/focus */
+            border-color: rgb(51, 51, 51); /* Border color on active/focus */
+        }
+        </style>
+    """, unsafe_allow_html=True)
         st.markdown('<a href="https://www.google.com" kind="primary">Explore Design Thinking GenAI Tools & Profiles</a>', unsafe_allow_html=True)
         
         # # with left_btn:
