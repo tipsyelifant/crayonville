@@ -602,7 +602,8 @@ def run():
         # left_btn, right_btn = st.columns(2)
         
         # with left_btn:
-         a[kind="primary"] { 
+        st.markdown("""
+        a[kind="primary"] { 
             background-color: #EDBB05); 
             color: rgb(51, 51, 51) !important; 
             border: 2px rgb(51, 51, 51); 
