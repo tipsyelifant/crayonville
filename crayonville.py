@@ -601,27 +601,68 @@ def run():
         # st.write(resultOptions[personality]['image'])
         left_btn, right_btn = st.columns(2)
 
-        with left_btn:
+
+        # Use columns to layout buttons vertically
+        col1, col2 = st.columns(2)
+        
+        # Top button in the first column
+        with col1:
             st.markdown("")
-            st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
-            # st.markdown("") # Empty string for spacing
-            # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
-        with right_btn:
-            # st.link_button("Design Thinking E-Learning", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
             st.markdown("""<style>
-            div.stButton > button:first-child {
-            background-color: #EDBB09;
-            color: rgb(51, 51, 51);
-            border: 2px rgb(51, 51, 51);
-            height: auto;
-            width: 270px !important;
-            padding-top: 10px !important
-            padding-bottom: 10px !important;
-            margin-left: 0%;
-            } </style>""", unsafe_allow_html=True)
+                div.stButton > button:first-child {
+                background-color: #EDBB09;
+                color: rgb(51, 51, 51);
+                border: 2px rgb(51, 51, 51);
+                height: auto;
+                width: 270px !important;
+                padding-top: 10px !important;
+                padding-bottom: 10px !important;
+                margin-left: 0%;
+                } </style>""", unsafe_allow_html=True)
+            if st.button("Explore Design Thinking GenAI Tools & Profiles", type='primary'):
+                st.session_state.progress = 2
+                st.rerun()
+        
+        # Bottom button in the second column
+        with col2:
+            st.markdown("""<style>
+                div.stButton > button:first-child {
+                background-color: #EDBB09;
+                color: rgb(51, 51, 51);
+                border: 2px rgb(51, 51, 51);
+                height: auto;
+                width: 270px !important;
+                padding-top: 10px !important;
+                padding-bottom: 10px !important;
+                margin-left: 0%;
+                } </style>""", unsafe_allow_html=True)
             if st.button("Not you? Restart Personality Quiz", type='primary'):
                 st.session_state.progress = 2
                 st.rerun()
+
+
+        
+        # with left_btn:
+        #     st.markdown("")
+        #     st.link_button("Explore Design Thinking GenAI Tools & Profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
+        #     # st.markdown("") # Empty string for spacing
+        #     # st.link_button("Check out the other profiles", "https://www.google.com", use_container_width=True) # Edit here for E-learning website
+        # with right_btn:
+        #     # st.link_button("Design Thinking E-Learning", "https://www.google.com", use_container_width=True) # Edit here for the inno-portal website
+        #     st.markdown("""<style>
+        #     div.stButton > button:first-child {
+        #     background-color: #EDBB09;
+        #     color: rgb(51, 51, 51);
+        #     border: 2px rgb(51, 51, 51);
+        #     height: auto;
+        #     width: 270px !important;
+        #     padding-top: 10px !important
+        #     padding-bottom: 10px !important;
+        #     margin-left: 0%;
+        #     } </style>""", unsafe_allow_html=True)
+        #     if st.button("Not you? Restart Personality Quiz", type='primary'):
+        #         st.session_state.progress = 2
+        #         st.rerun()
 
 
     else:
