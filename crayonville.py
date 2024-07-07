@@ -452,7 +452,7 @@ def run():
             "image": "curiouscream.png"
         },
         frozenset(["White", "Green"]): {
-            "image": "methodicalmint.png"
+            "image": "methodicalmint.svg"
         },
         frozenset(["White", "Blue"]): {
             "image": "adaptiveaqua.png"
