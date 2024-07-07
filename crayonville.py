@@ -570,15 +570,15 @@ def run():
                 st.write("The code is incorrect")
     
     elif st.session_state.progress == 17:
-        st.markdown('<div style="font-size:20px;">You chose a picture and everything starts to <b>spin.</b> </div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to <b>spin.</b> </div>', unsafe_allow_html=True)
         st.image("./image/spin.png", width=600) # Change here to show qrcode image
-        st.markdown('<div style="font-size:20px;">Wizard Hagrid echoed, "I understand, little yellow crayon, that you would like to create <b>magnificent art</b> in the world! </div>', unsafe_allow_html=True)
-        st.markdown('<div style="font-size:20px;">To create art that everyone desires, you need to master the <b>design thinking spell</b> and discover the <b>power of empathy, envision and experiment."</b> </div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">Wizard Hagrid echoed, "I understand, little yellow crayon, that you would like to create <b>magnificent art</b> in the world! </div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">To create art that everyone desires, you need to master the <b>design thinking spell</b> and discover the <b>power of empathy, envision and experiment."</b> </div>', unsafe_allow_html=True)
         st.image("./image/spell.png", width=600) # Change here to show qrcode image
-        st.markdown('<div style="font-size:20px;">The <b>journey</b> that you have chosen reveals your <b>thinking style.</b> Understanding it helps you to adapt to the use of the design thinking spell effectively."</div>', unsafe_allow_html=True)
-        st.image("./image/hats.png", width=400) # Change here to show qrcode image
-        st.markdown('<div style="font-size:20px;"><b>Are you ready to receive your powers?</b></div>', unsafe_allow_html=True)
-        st.image("./image/crayon.png", width=400) # Change here to show qrcode image
+        st.markdown('<div style="text-align:center; font-size:20px;">The <b>journey</b> that you have chosen reveals your <b>thinking style.</b> Understanding it helps you to adapt to the use of the design thinking spell effectively."</div>', unsafe_allow_html=True)
+        st.image("./image/hats.png", width=600) # Change here to show qrcode image
+        st.markdown('<div style="text-align:center; font-size:20px;"><b>Are you ready to receive your powers?</b></div>', unsafe_allow_html=True)
+        st.image("./image/crayon.png", width=600) # Change here to show qrcode image
         if st.button("Yes, I AM!", type="primary"):
                 st.session_state.progress += 1
                 st.rerun()
