@@ -446,46 +446,46 @@ def run():
 
     resultOptions = {
         frozenset(["White", "Black"]): {
-            "image": "groundedgrey.png",
+            "image": "groundedgrey.svg",
         },
         frozenset(["White", "Yellow"]): {
-            "image": "curiouscream.png"
+            "image": "curiouscream.svg"
         },
         frozenset(["White", "Green"]): {
             "image": "methodicalmint-3.svg"
         },
         frozenset(["White", "Blue"]): {
-            "image": "adaptiveaqua.png"
+            "image": "adaptiveaqua.svg"
         },
         frozenset(["White", "Red"]): {
-            "image": "pragmaticpink.png"
+            "image": "pragmaticpink.svg"
         },
         frozenset(["Black", "Yellow"]): {
-            "image": "mindfulmustard.png"
+            "image": "mindfulmustard.svg"
         },
         frozenset(["Black", "Green"]): {
-            "image": "farsightedforest.png"
+            "image": "farsightedforest.svg"
         },
         frozenset(["Black", "Blue"]): {
-            "image": "navigationalnavy.png"
+            "image": "navigationalnavy.svg"
         },
         frozenset(["Black", "Red"]): {
-            "image": "meticulousmaroon.png"
+            "image": "meticulousmaroon.svg"
         },
         frozenset(["Yellow", "Green"]): {
-            "image": "luminouslime.png"
+            "image": "luminouslime.svg"
         },
         frozenset(["Yellow", "Blue"]): {
-            "image": "tenaciousturquoise.png"
+            "image": "tenaciousturquoise.svg"
         },
         frozenset(["Yellow", "Red"]): {
-            "image": "optimisticorange.png"
+            "image": "optimisticorange.svg"
         },
         frozenset(["Green", "Blue"]):  {
-            "image": "trailblazingteal.png"
+            "image": "trailblazingteal.svg"
         },
         frozenset(["Green", "Red"]): {
-            "image": "boldbrown.png"
+            "image": "boldbrown.svg"
         },
         frozenset(["Blue", "Red"]): {
             "image": "perceptivepurple-8.svg"
