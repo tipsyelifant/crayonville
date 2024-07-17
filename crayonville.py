@@ -586,7 +586,8 @@ def run():
     elif st.session_state.progress > 17: # Change the number here based on the number of questions. Set as 13 for 12 questions
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
-        
+        st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to <b>spin.</b> </div>', unsafe_allow_html=True)
+        st.image("./image/spin.png", width=600) # Change here to show qrcode image
         #st.write(st.session_state.answers)
         st.markdown('<div style="font-size:20px;"><b>Completed!</b></div>', unsafe_allow_html=True)
         st.progress(100)
