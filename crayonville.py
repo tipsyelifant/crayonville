@@ -597,7 +597,7 @@ def run():
     #             st.session_state.progress += 1
     #             st.rerun()
 
-    elif st.session_state.progress > 17: # Change the number here based on the number of questions. Set as 13 for 12 questions
+    elif st.session_state.progress > 18: # Change the number here based on the number of questions. Set as 13 for 12 questions
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to spin.</div>', unsafe_allow_html=True)
