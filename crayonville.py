@@ -587,14 +587,13 @@ def run():
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
         st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to spin.</div>', unsafe_allow_html=True)
-        st.image("./image/spin.png", width=600) # Change here to show qrcode image
+        st.image("./image/spin.png", width=600) 
         st.markdown('<div style="text-align:center; font-size:20px;">Wizard Hagrid echoed, "Your true colour is a unique blend of two hues, each representing a different aspect of the 6 Thinking Hats. These colours symbolize your design thinking preferences. You can harness them in the Design Thinking process to your advantage." </div>', unsafe_allow_html=True)
-        st.markdown('<div style="text-align:center; font-size:20px;">To create art that everyone desires, you need to master the <b>design thinking spell</b> and discover the <b>power of empathy, envision and experiment."</b> </div>', unsafe_allow_html=True)
-        st.image("./image/spell.png", width=600) # Change here to show qrcode image
-        st.markdown('<div style="text-align:center; font-size:20px;">The <b>journey</b> that you have chosen reveals your <b>thinking style.</b> Understanding it helps you to adapt to the use of the design thinking spell effectively."</div>', unsafe_allow_html=True)
-        st.image("./image/hats.png", width=600) # Change here to show qrcode image
-        st.markdown('<div style="text-align:center; font-size:20px;"><b>Are you ready to receive your powers?</b></div>', unsafe_allow_html=True)
-        st.image("./image/crayon.png", width=600) # Change here to show qrcode image
+        st.image("./image/hats.png", width=600) 
+        st.markdown('<div style="text-align:center; font-size:20px;">As you absorb this revelation, you realize that your journey was not just about finding your true colour, but also about embracing your strengths and using them to create something remarkable. With newfound confindence, you finally understood that each Design Thinking stage allows you to leverage your unique thinking preferences to innovate and solve problems in creative ways.</div>', unsafe_allow_html=True)
+        st.image("./image/spell.png", width=600) 
+        st.markdown('<div style="text-align:center; font-size:20px;"><b>Curious to know your true colour? Keep scrolling!</b></div>', unsafe_allow_html=True)
+        st.image("./image/crayon.png", width=600) 
         #st.write(st.session_state.answers)
         st.markdown('<div style="font-size:20px;"><b>Completed!</b></div>', unsafe_allow_html=True)
         st.progress(100)
