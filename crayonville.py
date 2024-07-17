@@ -231,6 +231,7 @@ def run():
     questions = [
         {"landing":"placeholder"},
         {"sign_in":"placeholder"},
+        {"another":"placeholder"},
         {
             "question": "Q1/15: You stumbled upon a torn map leading to the legendary Wizard Hagrid. What's your move?",
             "image": "image/Q1.png",
@@ -580,8 +581,8 @@ def run():
         # st.markdown('<div style="text-align:center; font-size:18px;">Design Thinking process!</div>', unsafe_allow_html=True)
         st.markdown("") # Empty text to act as spacing
         if st.button("Let's go!", type="primary"):
-                st.session_state.progress = 3
-                st.rerun()
+            st.session_state.progress = 3
+            st.rerun()
     
     # elif st.session_state.progress == 17:
     #     st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to <b>spin.</b> </div>', unsafe_allow_html=True)
