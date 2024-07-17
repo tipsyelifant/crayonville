@@ -691,11 +691,11 @@ def run():
         # st.write(questions[st.session_state.progress]['image']) # Write image name for now instead of showing image
         time.sleep(0.5)
         if st.button(questions[st.session_state.progress]['answers']['option1']['text'], type="secondary"):
-            st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option1']['scores']
+            st.session_state.answers[st.session_state.progress-2] = questions[st.session_state.progress]['answers']['option1']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
         if st.button(questions[st.session_state.progress]['answers']['option2']['text'], type="secondary"):
-            st.session_state.answers[st.session_state.progress-1] = questions[st.session_state.progress]['answers']['option2']['scores']
+            st.session_state.answers[st.session_state.progress-2] = questions[st.session_state.progress]['answers']['option2']['scores']
             st.session_state.progress = st.session_state.progress + 1
             st.rerun()
         # if st.button("Previous Question", type="primary"):
