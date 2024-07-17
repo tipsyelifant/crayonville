@@ -274,7 +274,7 @@ def run():
             },
         },
         {
-            "question": "Q4/15: Amidst hunger, you discover a mushroom in the cave. You thought:",
+            "question": "Q4/15: You find yourself getting hungry and discover a mushroom in the cave. You think:",
             "image": "image/Q4.png",
             "answers": {
                 "option1": {
@@ -316,7 +316,7 @@ def run():
             },
         },
         {
-            "question": 'Q7/15: "If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You thought:',
+            "question": 'Q7/15: "If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You ponder:',
             "image": "image/Q7.png",
             "answers": {
                 "option1": {
@@ -330,7 +330,7 @@ def run():
             },
         },
         {
-            "question": "Q8/15: After eating the fruits, you were transported instantly to Mount Chroma. You met a little paintbrush who said 'Are you looking for Wizard Hagrid? I can bring you there.' You:",
+            "question": "Q8/15: After eating the fruits, you were transported instantly to Mount Chroma. You met a little paintbrush who said 'Are you looking for Wizard Hagrid? I can bring you there.' You wonder:",
             "image": "image/Q8.png",
             "answers": {
                 "option1": {
@@ -373,7 +373,7 @@ def run():
 
         },
         {
-            "question": "Q11/15: You drew as frantically as you could, determined to win. You notice that the paintbrushes couldn’t keep up with you.",
+            "question": "Q11/15: You drew as frantically as you could, determined to win. You notice that the paintbrushes struggle to keep up with you.",
             "image": "image/Q11.png",
             "answers": {
                 "option1": {
@@ -387,7 +387,7 @@ def run():
             },
         },
         {
-            "question": "Q12/15: Defeated that they had lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They said that Wizard Hagrid lives there. You:",
+            "question": "Q12/15: Defeated that they lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They said that Wizard Hagrid lives there. You:",
             "image": "image/Q12.png",
             "answers": {
                 "option1": {
@@ -401,7 +401,7 @@ def run():
             },
         },
         {
-            "question": "Q13/15: You decided to follow the road towards the art gallery. Entering the art gallery, you saw a wise old man, who turns out to be Wizard Hagrid that you’ve been looking for. You:",
+            "question": "Q13/15: You decided to follow the road towards the art gallery. Entering the art gallery, you see a wise old man, who turns out to be the Wizard Hagrid that you’ve been looking for. You:",
             "image": "image/Q13.png",
             "answers": {
                 "option1": {
@@ -415,7 +415,7 @@ def run():
             },
         },
         {
-            "question": "Q14/15: You say, ‘I want to be a super crayon as I wish to create beautiful art’. \n ‘And I see you’ve come a long way to meet me. I shall grant you your wishes, but you need to give up who you are to be a new crayon.’ Said Wizard Hagrid. ",
+            "question": "Q14/15: You say, ‘I am on a quest to discover my true colour! Can you help me?’. \n ‘And I see you’ve come a long way to meet me. I can assist you, but you need to give up who you are to be a new crayon.’ says Wizard Hagrid. ",
             "image": "image/Q14.png",
             "answers": {
                 "option1": {
