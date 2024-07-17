@@ -568,6 +568,20 @@ def run():
                 st.rerun()
             else:
                 st.write("The code is incorrect")
+
+       elif st.session_state.progress == 2:
+        # left_co, cent_co,last_co = st.columns(3)
+        # with cent_co:
+        # st.title("Welcome to Crayonville!")
+        # show_gif("./image/main.gif")
+        st.image("./image/hagridlogo1.png", use_column_width=True) #Change this line to show the logo
+        st.markdown('<div style="text-align:center; font-size:18px;">Curious about your strengths in Design Thinking?</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:18px;">Inspired by the 6 Thinking Hats (Edward De Bono), take this profiling quiz to discover your thinking style and how you can leverage it in the</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:18px;">Design Thinking process!</div>', unsafe_allow_html=True)
+        st.markdown("") # Empty text to act as spacing
+        if st.button("Start!", type="primary"):
+                st.session_state.progress = 3
+                st.rerun()
     
     # elif st.session_state.progress == 17:
     #     st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to <b>spin.</b> </div>', unsafe_allow_html=True)
