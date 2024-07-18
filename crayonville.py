@@ -307,7 +307,7 @@ def run():
             "image": "image/Q6.png",
             "answers": {
                 "option1": {
-                    "text": "Aww, such a cute rabbit! *waves back*",
+                    "text": "Aww, such a cute rabbit! **waves back**",
                     "scores": { "Red": 1, "White": 0 },
                 },
                 "option2": {
@@ -560,11 +560,11 @@ def run():
         st.write("https://go.gov.sg/crayonvilleregistration") # Change here to show your link
         st.markdown('<div style="font-size:20px;"><b>Step 2:</b> You will receive an email with the code after you have completed the FormSG</div>', unsafe_allow_html=True)
         st.markdown('') # Empty string for spacing
-        st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email!</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email! Do not copy and paste!</div>', unsafe_allow_html=True)
         password = st.text_input('', label_visibility='collapsed')
 
         if st.button("Start Personality Quiz", type="primary"):
-            if password == "thedayiknowmycolour": # Change here to set the password
+            if password == "123start": # Change here to set the password
                 st.session_state.progress = 2
                 st.rerun()
             else:
