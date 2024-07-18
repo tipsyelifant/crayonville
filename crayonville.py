@@ -307,7 +307,7 @@ def run():
             "image": "image/Q6.png",
             "answers": {
                 "option1": {
-                    "text": "Aww, such a cute rabbit! /[*waves back*]",
+                    "text": "Aww, such a cute rabbit! (*waves back*)",
                     "scores": { "Red": 1, "White": 0 },
                 },
                 "option2": {
