@@ -601,19 +601,19 @@ def run():
     elif st.session_state.progress > 17: # Change the number here based on the number of questions. Set as 13 for 12 questions
         # left_co, cent_co,last_co = st.columns(3)
         # with cent_co:
-        st.markdown('<div style="text-align:center; font-size:18px;">*Scroll down to look at your profile.*</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:16px;"><b>Scroll down to look at your profile.</b></div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to spin.</div>', unsafe_allow_html=True)
         st.image("./image/spin.png", width=600) 
         st.markdown('<div style="text-align:center; font-size:20px;">Wizard Hagrid echoed, "Your true colour is a unique blend of two hues, each representing a different aspect of the 6 Thinking Hats. These colours symbolize your design thinking preferences. You can harness them in the Design Thinking process to your advantage." </div>', unsafe_allow_html=True)
         st.image("./image/hats.png", width=600) 
-        st.markdown('<div style="text-align:center; font-size:20px;">As you absorb this revelation, you realize that your journey was not just about finding your true colour, but also about embracing your strengths and using them to create something remarkable. With newfound confindence, you finally understood that each Design Thinking stage allows you to leverage your unique thinking preferences to innovate and solve problems in creative ways.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">As you absorb this revelation, you realize that your journey was not just about finding your true colour, but also about embracing your strengths and using them to create something remarkable. With newfound confidence, you finally understood that each Design Thinking stage allows you to leverage your unique thinking preferences to innovate and solve problems in creative ways.</div>', unsafe_allow_html=True)
         st.image("./image/spell.png", width=600) 
         st.markdown('<div style="text-align:center; font-size:20px;"><b>Curious to know your true colour? Keep scrolling!</b></div>', unsafe_allow_html=True)
         st.image("./image/crayon.png", width=600) 
         #st.write(st.session_state.answers)
         st.markdown('<div style="font-size:20px;"><b>Completed!</b></div>', unsafe_allow_html=True)
         #st.progress(100)
-        # st.write("Completed!")
+        # st.write("You are...")
         personality = calculate_results(st.session_state.answers)
         # st.markdown(f'<div style="font-size:20px;"><b>{personality}</b></div>', unsafe_allow_html=True)
         # st.write(personality)
@@ -655,7 +655,7 @@ def run():
         }
         </style>
     """, unsafe_allow_html=True)
-        st.markdown('<a href="https://rise.articulate.com/share/QWU-RwML1yH3Eshd6hXxkl1-ONmZ5Skd" kind="primary">Click to explore Design Thinking GenAI Tools & Profiles</a>', unsafe_allow_html=True)
+        st.markdown('<a href="https://rise.articulate.com/share/QWU-RwML1yH3Eshd6hXxkl1-ONmZ5Skd" kind="primary">Click to explore Design Thinking GenAI Tools & other Crayon Profiles</a>', unsafe_allow_html=True)
         
         # # with left_btn:
         # st.markdown("")
