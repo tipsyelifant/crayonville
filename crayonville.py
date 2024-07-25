@@ -604,14 +604,16 @@ def run():
         st.markdown('<div style="text-align:center; font-size:16px;"><b>Scroll down to look at your profile.</b></div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:20px;">You chose a picture and everything starts to spin.</div>', unsafe_allow_html=True)
         st.image("./image/spin.png", width=600) 
-        st.markdown('<div style="text-align:center; font-size:20px;">Wizard Hagrid echoes, "Your true colour is a unique blend of two hues, each representing a different aspect of the 6 Thinking Hats. These colours symbolize your thinking preferences. You can harness them in the Design Thinking process to your advantage." </div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">Wizard Hagrid echoes, "Your true colour is a unique blend of two hues, each representing a different aspect of the 6 Thinking Hats. These colours symbolise your thinking preferences. You can harness them in the Design Thinking process to your advantage." </div>', unsafe_allow_html=True)
         st.image("./image/hats.png", width=600) 
-        st.markdown('<div style="text-align:center; font-size:20px;">As you absorb this revelation, you realize that your journey was not just about finding your true colour, but also about embracing your strengths and using them to create something remarkable. With your newfound confidence, you finally understood that each Design Thinking stage allows you to leverage your unique thinking preferences to innovate and solve problems in creative ways.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; font-size:20px;">As you absorb this revelation, you realise that your journey was not just about finding your true colour, but also about embracing your strengths and using them to create something remarkable. With your newfound confidence, you finally understood that each Design Thinking stage allows you to leverage your unique thinking preferences to innovate and solve problems in creative ways.</div>', unsafe_allow_html=True)
         st.image("./image/spell.png", width=600) 
         # st.markdown('<div style="text-align:center; font-size:20px;"><b>Curious to know your true colour? Keep scrolling!</b></div>', unsafe_allow_html=True)
         # st.image("./image/crayon.png", width=600) 
         #st.write(st.session_state.answers)
         st.markdown('<div style="text-align:center; font-size:20px;"><b>Once the spinning stops, you find yourself in your true colour...</b></div>', unsafe_allow_html=True)
+        st.markdown("")
+        st.markdown("")
         st.markdown("")
         #st.progress(100)
         # st.write("You are...")
@@ -656,7 +658,7 @@ def run():
         }
         </style>
     """, unsafe_allow_html=True)
-        st.markdown('<a href="https://rise.articulate.com/share/QWU-RwML1yH3Eshd6hXxkl1-ONmZ5Skd" kind="primary">Click to explore Design Thinking GenAI Tools & other Crayon Profiles</a>', unsafe_allow_html=True)
+        st.markdown('<a href="https://rise.articulate.com/share/QWU-RwML1yH3Eshd6hXxkl1-ONmZ5Skd" kind="primary">Learn More? Click To Explore Design Thinking GenAI Tools & Other Crayon Profiles</a>', unsafe_allow_html=True)
         
         # # with left_btn:
         # st.markdown("")
@@ -676,7 +678,7 @@ def run():
         padding-bottom: 10px !important;
         margin-left: 0%;
         } </style>""", unsafe_allow_html=True)
-        if st.button("Not you? Restart Personality Quiz", type='primary'):
+        if st.button("Not You? Click To Restart Personality Quiz", type='primary'):
             st.session_state.progress = 2
             st.rerun()
 
