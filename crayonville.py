@@ -359,7 +359,7 @@ def run():
             },
         },
         {
-            "question": "Q10/15: The paintbrushes say ‘I challenge you to a game of 'Drawasaurus’. If you can draw faster than us, we’ll show you the way to Wizard Hagrid. If you are slower, you’ll give up your colour to us.’",
+            "question": "Q10/15: The paintbrushes say ‘I challenge you to a game of Drawasaurus. If you can draw faster than us, we’ll show you the way to Wizard Hagrid. If you are slower, you’ll give up your colour to us.’",
             "image": "image/Q10.png",
             "answers": {
                 "option1": {
