@@ -374,11 +374,11 @@ def run():
 
         },
         {
-            "question": "Q11/15: You draw as frantically as you can, determined to win. You notice that the paintbrushes struggle to keep up with you.",
+            "question": "Q11/15: You draw as frantically as you can, determined to win. You notice the paintbrushes struggling. You think:",
             "image": "image/Q11.png",
             "answers": {
                 "option1": {
-                    "text": "Looks like a messy situation when you have a couple of paintbrushes drawing together.",
+                    "text": "I knew it! All paintbrushes drawing together will be a mess!",
                     "scores": { "White": 1, "Yellow": 0 },
                 },
                 "option2": {
