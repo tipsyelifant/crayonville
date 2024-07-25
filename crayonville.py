@@ -233,7 +233,7 @@ def run():
         {"sign_in":"placeholder"},
         {"another":"placeholder"},
         {
-            "question": "Q1/15: You stumbled upon a torn map leading to the legendary Wizard Hagrid. What's your move?",
+            "question": "Q1/15: You stumble upon a torn map leading to the legendary Wizard Hagrid. What's your move?",
             "image": "image/Q1.png",
             "answers": {
                 "option1": {
@@ -247,7 +247,7 @@ def run():
             },
         },
         {
-            "question": "Q2/15: Suddenly, you looked ahead and spotted a colourful boat along a rainbow river.",
+            "question": "Q2/15: Suddenly, you look ahead and spot a colourful boat along a rainbow river.",
             "image": "image/Q2.png",
             "answers": {
                 "option1": {
@@ -261,7 +261,7 @@ def run():
             },
         },
         {
-            "question": "Q3/15: You decided to take the boat and it sailed into a mysterious cave. You thought to yourself:",
+            "question": "Q3/15: You take the boat and sail into a mysterious cave. You think to yourself:",
             "image": "image/Q3.png",
             "answers": {
                 "option1": {
@@ -289,7 +289,7 @@ def run():
             },
         },
         {
-            "question": "Q5/15: You walked along the cave and spotted some graffiti on the walls. You wonder:",
+            "question": "Q5/15: Thereafter, you walk along the cave and spot some graffiti on the walls. You wonder:",
             "image": "image/Q5.png",
             "answers": {
                 "option1": {
@@ -303,7 +303,7 @@ def run():
             },
         },
         {
-            "question": "Q6/15: Suddenly, you noticed a rabbit outside the cave waving at you. It gestured for you to follow it. Your immediate reaction:",
+            "question": "Q6/15: Suddenly, you notice a rabbit outside the cave waving at you, gesturing for you to follow it. Your immediate reaction:",
             "image": "image/Q6.png",
             "answers": {
                 "option1": {
@@ -317,7 +317,7 @@ def run():
             },
         },
         {
-            "question": 'Q7/15: "If you want food, go to the Enchanted Forest!" the rabbit shouted and ran off. You decided to head to the Enchanted Forest, where you found yourselves surrounded by fruit trees. You ponder:',
+            "question": 'Q7/15: "If you want food, go to the Enchanted Forest!" the rabbit shouts. You head to the Enchanted Forest, where you are surrounded by fruit trees. You ponder:',
             "image": "image/Q7.png",
             "answers": {
                 "option1": {
@@ -331,7 +331,7 @@ def run():
             },
         },
         {
-            "question": "Q8/15: After eating the fruits, you were transported instantly to Mount Chroma. You met a little paintbrush who said 'Are you looking for Wizard Hagrid? I can bring you there.' You wonder:",
+            "question": "Q8/15: You walk through the forest until you reach Mount Chroma. You meet a little paintbrush who says 'Are you looking for Wizard Hagrid? I can bring you there.' You wonder:",
             "image": "image/Q8.png",
             "answers": {
                 "option1": {
@@ -345,7 +345,7 @@ def run():
             },
         },
         {
-            "question": "Q9/15: You followed the little paintbrush to a cylindrical house. When the door opens, you were greeted by a group of colourful little paintbrushes. You thought:",
+            "question": "Q9/15: You follow the little paintbrush to a cylindrical house. When the door opens, you see a group of colourful little paintbrushes. You think:",
             "image": "image/Q9.png",
             "answers": {
                 "option1": {
@@ -359,7 +359,7 @@ def run():
             },
         },
         {
-            "question": "Q10/15: ‘I challenge you to a game of ‘Drawasaurus’. If you can draw faster than us, we’ll show you the way to Wizard Hagrid. If you are slower, you’ll give up your colour to us,’ said the paintbrushes.",
+            "question": "Q10/15: ‘The paintbrushes say ‘I challenge you to a game of 'Drawasaurus’. If you can draw faster than us, we’ll show you the way to Wizard Hagrid. If you are slower, you’ll give up your colour to us,’",
             "image": "image/Q10.png",
             "answers": {
                 "option1": {
@@ -374,7 +374,7 @@ def run():
 
         },
         {
-            "question": "Q11/15: You drew as frantically as you could, determined to win. You notice that the paintbrushes struggle to keep up with you.",
+            "question": "Q11/15: You draw as frantically as you can, determined to win. You notice that the paintbrushes struggle to keep up with you.",
             "image": "image/Q11.png",
             "answers": {
                 "option1": {
@@ -388,7 +388,7 @@ def run():
             },
         },
         {
-            "question": "Q12/15: Defeated that they lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They said that Wizard Hagrid lives there. You:",
+            "question": "Q12/15: Defeated that they lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They tell you that Wizard Hagrid lives there. You:",
             "image": "image/Q12.png",
             "answers": {
                 "option1": {
@@ -402,7 +402,7 @@ def run():
             },
         },
         {
-            "question": "Q13/15: You decided to follow the road towards the art gallery. Entering the art gallery, you see a wise old man, who turns out to be the Wizard Hagrid that you’ve been looking for. You:",
+            "question": "Q13/15: You decide to follow the road towards the art gallery. Entering the art gallery, you see a wise old man, who turns out to be the Wizard Hagrid that you’ve been looking for. You:",
             "image": "image/Q13.png",
             "answers": {
                 "option1": {
