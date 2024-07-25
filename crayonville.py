@@ -388,7 +388,7 @@ def run():
             },
         },
         {
-            "question": "Q12/15: Defeated that they lost, the paintbrushes pointed you to the long road ahead, which leads to the art gallery. They tell you that Wizard Hagrid lives there. You:",
+            "question": "Q12/15: Defeated, the paintbrushes point you to the long road ahead, which leads to the art gallery. They tell you that Wizard Hagrid lives there. You:",
             "image": "image/Q12.png",
             "answers": {
                 "option1": {
