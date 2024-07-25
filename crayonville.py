@@ -402,7 +402,7 @@ def run():
             },
         },
         {
-            "question": "Q13/15: You decide to follow the road towards the art gallery. Entering the art gallery, you see a wise old man, who turns out to be the Wizard Hagrid that you’ve been looking for. You:",
+            "question": "Q13/15: You decide to follow the road towards the art gallery. Entering the art gallery, you see a wise old man. He is Wizard Hagrid! You:",
             "image": "image/Q13.png",
             "answers": {
                 "option1": {
