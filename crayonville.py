@@ -658,7 +658,7 @@ def run():
         }
         </style>
     """, unsafe_allow_html=True)
-        st.markdown('<a href="https://rise.articulate.com/share/QWU-RwML1yH3Eshd6hXxkl1-ONmZ5Skd" kind="primary">Learn More? Click To Explore Design Thinking GenAI Tools & Other Crayon Profiles</a>', unsafe_allow_html=True)
+        st.markdown('<a href="https://www.learn.gov.sg/learner/index.html#/course/422580?app=dlp" kind="primary">Learn More? Click To Explore Design Thinking GenAI Tools & Other Crayon Profiles</a>', unsafe_allow_html=True)
         
         # # with left_btn:
         # st.markdown("")
