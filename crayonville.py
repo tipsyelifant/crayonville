@@ -416,7 +416,7 @@ def run():
             },
         },
         {
-            "question": "Q14/15: You say, ‘I am on a quest to discover my true colour! Can you help me?’. \n Wizard Hagrid says ‘I see you’ve come a long way to meet me. I can assist you, but you need to give up who you are to be a new crayon.’ You think:",
+            "question": "Q14/15: You say, ‘I am on a quest to discover my true colour! Can you help me?’. \n Wizard Hagrid says ‘I see you’ve come a long way to meet me. I can assist you, but you need to give up who you.’ You think:",
             "image": "image/Q14.png",
             "answers": {
                 "option1": {
@@ -424,7 +424,7 @@ def run():
                     "scores": { "White": 1, "Green": 0 },
                 },
                 "option2": {
-                    "text": "Can’t wait to see the new me!",
+                    "text": "Given the new possibilities, I can’t wait to see the new me!",
                     "scores": { "White": 0, "Green": 1 },
                 },
             },
