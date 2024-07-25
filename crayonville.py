@@ -392,7 +392,7 @@ def run():
             "image": "image/Q12.png",
             "answers": {
                 "option1": {
-                    "text": "Sense that you are getting closer to my destination this time. ",
+                    "text": "Sense that you are getting closer to your destination this time. ",
                     "scores": { "Red": 1, "Green": 0 },
                 },
                 "option2": {
