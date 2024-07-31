@@ -562,6 +562,7 @@ def run():
         st.markdown('') # Empty string for spacing
         st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email! <b>Do not copy and paste!</b></div>', unsafe_allow_html=True)
         password = st.text_input('', label_visibility='collapsed')
+        st.markdown('<div style="font-size:16px;"><b>Tip:</b>If you encounter an error message stating that the code is incorrect even though you typed it accurately, try pressing "Enter" on your keyboard before clicking the "Start Personality Quiz" button. This might help ensure the code is registered properly.</div>', unsafe_allow_html=True)
 
         if st.button("Start Personality Quiz", type="primary"):
             if password == "123start": # Change here to set the password
