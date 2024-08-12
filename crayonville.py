@@ -558,6 +558,7 @@ def run():
         st.markdown('<div style="font-size:20px;"><b>Step 1:</b> Click on the link and fill up the FormSG</div>', unsafe_allow_html=True)
         st.write("https://go.gov.sg/crayonvilleregistration") # Change here to show your link
         st.markdown('*<div style="font-size:16px;"><b>Important:</b> Please complete the FormSG to ensure accurate data collection for the profiling quiz. Please do not sharing your quiz code.</div>*', unsafe_allow_html=True)
+        st.markdown('') # Empty string for spacing
         st.markdown('<div style="font-size:20px;"><b>Step 2:</b> You will receive an email with the code after you have completed the FormSG</div>', unsafe_allow_html=True)
         st.markdown('') # Empty string for spacing
         st.markdown('<div style="font-size:20px;"><b>Step 3:</b> Enter the code from your email! <b>Do not copy and paste!</b></div>', unsafe_allow_html=True)
