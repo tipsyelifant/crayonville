@@ -564,7 +564,7 @@ def run():
         password = st.text_input('', label_visibility='collapsed')
         st.markdown('<div style="font-size:16px;"><b>Tip:</b> If you encounter an error message stating that the code is incorrect even though you typed it accurately, try pressing "Enter" on your keyboard before clicking the "Start Personality Quiz" button. This might help ensure the code is registered properly.</div>', unsafe_allow_html=True)
         st.markdown("")
-        st.markdown('<div style="font-size:16px;">_<b>Important:</b> Please complete the FormSG to ensure accurate data collection for the profiling quiz. Please do not sharing your quiz code._</div>', unsafe_allow_html=True)
+        st.markdown('<div style="font-size:16px;">*<b>Important:</b> Please complete the FormSG to ensure accurate data collection for the profiling quiz. Please do not sharing your quiz code.*</div>', unsafe_allow_html=True)
         st.markdown("")
         st.markdown("")
         
