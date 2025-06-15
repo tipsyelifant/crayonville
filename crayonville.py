@@ -544,7 +544,7 @@ def run():
         # with cent_co:
         # st.title("Welcome to Crayonville!")
         # show_gif("./image/main.gif")
-        st.image("./image/hagridlogo1.png", use_column_width=True) #Change this line to show the logo
+        st.image("./image/hagridlogo1.png", use_container_width=True) #Change this line to show the logo
         st.markdown('<div style="text-align:center; font-size:18px;">Curious about your strengths in Design Thinking?</div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:18px;">Inspired by the 6 Thinking Hats (Edward De Bono), take this profiling quiz to discover your thinking style and how you can leverage it in the</div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:18px;">Design Thinking process!</div>', unsafe_allow_html=True)
@@ -582,7 +582,7 @@ def run():
         st.markdown('<div style="text-align:center; font-size:18px;">You are a yellow crayon living in Crayonville. You wonder all the time if yellow is truly your colour. Legend has it that a wizard resides in an exclusive art gallery and can reveal the true hues of any crayon.</div>', unsafe_allow_html=True)
         st.markdown('<div style="text-align:center; font-size:18px;">Join the adventure as you set out to find Wizard Hagrid and discover your true colour! But beware, the journey is filled with colourful challenges and mischievous art supplies!</div>', unsafe_allow_html=True)
         # st.markdown('<div style="text-align:center; font-size:18px;">Design Thinking process!</div>', unsafe_allow_html=True)
-        st.image("./image/opening.png", use_column_width=True) #Change this line to show the logo
+        st.image("./image/opening.png", use_container_width=True) #Change this line to show the logo
         st.markdown("") # Empty text to act as spacing
         if st.button("Let's go!", type="primary"):
             st.session_state.progress = 3
